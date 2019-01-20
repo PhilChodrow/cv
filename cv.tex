@@ -1,0 +1,241 @@
+%!TEX program = xelatex
+
+\documentclass[11pt,fullpage]{article}
+
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{listliketab}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{etoolbox}
+\usepackage{natbib}
+\usepackage{bibentry}
+
+\nobibliography*
+%\bibliographystyle{apa}
+
+% Palatino font
+%\usepackage[T1]{fontenc}
+%\usepackage[sc,osf]{mathpazo}
+
+\def\name{Philip S. Chodrow}
+
+\reversemarginpar
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.0in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\rmfamily\mdseries\Large}
+\subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+
+% \def\Long{0}
+% \def\Long{0}
+\newtoggle{Long}
+\toggletrue{Long}
+% \togglefalse{Long}
+
+\newcommand{\hide}[1]{
+   % \ifnum\Long=1
+ 
+   % #1 \vspace{\baselineskip}
+   % \fi
+ 
+   % \ifnum\Long=0
+   % % \vspace{2\baselineskip} \hspace{2cm}
+   % \fi
+   \iftoggle{Long}{
+   #1
+   }{}
+}
+
+
+\begin{document}
+\bibliographystyle{apalike}
+
+% Print name centered and bold:
+\centerline{\Large \bf \name}
+
+\vspace{0.25in}
+
+\begin{minipage}{0.50\linewidth}
+  \href{www.mit.edu}{Massachusetts Institute of Technology} \\
+  \iftoggle{Long}{
+	  \href{http://orc.mit.edu/}{Operations Research Center} \\
+	  \href{https://lids.mit.edu/}{Laboratory for Information and Decision Systems} \\ 
+	  \href{http://humnetlab.mit.edu/}{Human Mobility and Networks Lab} \\ 
+  }{}
+  77 Massachusetts Avenue \\
+  Cambridge, MA 02139
+\end{minipage}
+\begin{minipage}{0.50\linewidth}
+  \begin{tabular}{ll}
+    % Phone: & (212) 998-8578 \\
+    Website: & \href{https://philchodrow.github.io}{philchodrow.github.io} \\
+    Email: & \href{mailto:pchodrow@mit.edu}{pchodrow@mit.edu} \\
+    GitHub: & \href{https://github.com/PhilChodrow}{philchodrow}
+    % Homepage: & \href{http://www.christinabergey.com/}{www.christinabergey.com} \\
+  \end{tabular}
+\end{minipage}
+
+% \section*{Summary}
+\vspace{3em}
+
+\iftoggle{Long}{
+	I am an applied mathematician developing methods and models for studying complex human systems. I use probability, information theory, network science, and dynamical systems theory to learn about inequality, segregation, and modernity. I am also passionate about teaching, and putting powerful tools in the hands of those who aim to change the world for the better. I make regular contributions to the Boston nonprofit community, and organize a by-students-for-students course in statistical computing at MIT.	
+}{
+	I am an applied mathematician developing models and methods for studying adaptive human systems. Methods include network science, statistical inference, and information theory. Application areas include opinion dynamics; demographic segregation; and multiscale urban growth. 
+}
+
+
+\section*{Education}
+	\begin{longtable}{p{0.6in}|p{5.5in}}
+		2015- & {\bf Ph.D. Candidate} in Operations Research, MIT. Coursework GPA: 5.0. Expected graduation May, 2020. \\
+		2008-12 & {\bf B.A. with High Honors} in Pure Mathematics and Philosophy, Swarthmore College. Coursework GPA: 3.95. 
+	\end{longtable}
+
+\section*{Recognitions and Honors}
+	\setlength{\extrarowheight}{5pt}
+	\begin{longtable}{p{0.6in}|p{5.5in}}
+		2017-20 & {\bf NSF Graduate Research Fellowship} supporting research in modeling difference, disparity, and group dynamics in cities.\\ 
+		2018 & {\bf Goodwin Award Nominee} by MIT Operations Research Center for ``conspicuously effective teaching.'' \\ 
+		2012 & {\bf Fulbright Scholarship} supporting a year of research in Oslo, Norway. \\
+			 & {\bf Ivy Award} ``recognizing the man of the graduating class who is outstanding in leadership, scholarship, and contributions to the college community.''\\
+		\hide{
+			& {\bf Brinkmann Award} recognizing ``the best student paper on a mathematical subject.'' \\
+			& {\bf Phi Beta Kappa} inducted member.\\
+			 2010 & {\bf Eugene Lang Summer Initiative Grant}, supporting a summer of undergraduate research. \\}
+	\end{longtable}
+
+\section*{Papers}
+	\bibliographystyle{ieeetr} 
+	\setlength{\extrarowheight}{5pt}
+	\begin{longtable}{p{0.6in}|p{5.5in}}
+	  2018 & \bibentry{Chodrow2018} \\ 
+	  	   & \bibentry{Strano2018} \\ 
+	  2017 & \bibentry{Chodrow2017a} \\
+	  	   & \bibentry{Chodrow2017} \\ 
+\hide{     & \bibentry{Morse2016}. Appeared in Morse's SM thesis, May 2017.\\ }
+	  2016 & \bibentry{Chodrow2016a} \\
+\hide{	   & \bibentry{Chodrow2016}  \\ }
+	\end{longtable}
+
+\section*{Selected Talks}
+	\begin{longtable}{p{0.6in}|p{5.5in}}
+	2018 & Equilibrium Community Structure in Binary-State Adaptive Voter Models. SIAM Workshop on Network Science, Portland, Oregon, USA. \\ 
+		 & Community Formation in an Adaptive Voter Model. Conference on Complex Networks (CompleNet), Northeastern University, Boston, USA. \\ 
+		 & What's the Fuss about Power Laws? ORC Student Seminar, MIT, Cambridge, USA. \\ 
+	2017 & The Structure of Spatial Segregation. Growth Lab Seminar, Harvard Kennedy School, Cambridge, USA. \\
+		 & Information-Geometric Methods for Coarse-Graining Annotated Spatial Networks, Network Science Conference (NetSci), Indianapolis, USA. \\ 
+	\hide{	     
+	2016 & An Information Theoretic Lens on Urban Diversity. Conference on Complex Systems, Amsterdam, The Netherlands. \\
+		& Demand and Congestion in Multiplex Transportation Networks. Conference on Complex Systems, Amsterdam, The Netherlands. \\
+	2013 & Relativism, Cooperation, and the Practice of Inquiry. Conference on the Metaphysics of Culture, Helsinki, Finland.  \\
+		 & The Right Way to Care About the Truth. Filosofisk Supplement, the student philosophical society at the University of Oslo, Oslo, Norway. }
+	\end{longtable}
+
+\section*{Teaching}
+	\begin{longtable}{p{0.6in}|p{5.5in}}
+	   
+	  2017-18 & \textbf{Instructor}: ``Advanced Topics in Data Science,'' 3-hour workshop session, MIT. \\
+	          & \textbf{Organizer}: ``Computing in Optimization and Statistics'', student-taught January term course at MIT. \\
+	  		  & \textbf{Teaching Assistant}: 6.268: ``Network Science and Models,'' 6.431: ``Introduction to Probability,'' 1.208: ``Computer Modeling: From Individual Mobility to Networks'' \\ 
+	  2016 & \textbf{Group Co-Leader}: Workshop in Predictive Policing, ICERM, Providence, RI.  \\
+	  \hide{
+             & \textbf{Instructor}: ``Data Wrangling in R'' at MIT's January course ``Software Tools in Statistics and Optimization.'' \\
+	  	2012 & \textbf{Teaching Assistant} for an advanced undergraduate course in the philosophy of action with Professor Bjørn Ramberg at Universitet i Oslo. \\
+		2010-12 & \textbf{Mathematics Academic Support} at Swarthmore College, Swarthmore PA. \\
+		2009-12 & \textbf{Writing Mentor} at Swarthmore College, Swarthmore PA. Paper areas including philosophy, mathematics, English, sociology, and anthropology. Worked in-depth over a full year with two students writing senior theses. \\
+  		2012 & \textbf{Teaching Assistant} for intermediate-level course on the philosopy of Plato with Professor Grace Ledbetter at Swarthmore College, Swarthmore PA. 
+	  }
+	\end{longtable}
+
+
+\hide{
+	\section*{Academic Service}
+		\begin{longtable}{p{0.6in}|p{5.5in}}
+		  2016- & \textbf{Reviewer}. \emph{PLoS ONE}, \emph{International Journal of Geographic Information Systems}.\\
+		  2016- & \textbf{Program Committee Member}. NetSci-X, Conference on Complex Systems, International Conference on Complex Systems. 
+		\end{longtable}
+	}
+
+\hide{
+	\section*{Research \& Professional Experience}
+		\begin{longtable}{p{0.6in}|p{5.5in}}
+		  2018  & \textbf{Summer School} in Economic Networks, Oxford, UK \\ 
+		  2013-15 & \textbf{Analyst}, Health Leads, Boston MA \\
+		  2012-14 & \textbf{Research Assistant}, Laboratory for Quantitative Medicine \\ 
+		  2012-13 & \textbf{Visiting Researcher}, Center for the Study of Mind in Nature, Oslo, Norway \\
+		  2011-12 & \textbf{Senior Honors Thesis} in philosophy, entitled \emph{Perception and Moral Goodness}, Swarthmore College. \\
+		  2010    & \textbf{REU Fellow} in matrix analysis, College of William and Mary, Williamsburg VA. \\
+		  2009    & \textbf{Research Assistant} in theoretical plasma physics, James Madison University, Harrisonburg VA.  
+		\end{longtable}
+}
+
+
+\hide{
+	\section*{Community Service}
+		\begin{longtable}{p{0.6in}|p{5.5in}}
+		  2017 - & \textbf{Junior Instructor}, Harvard Aikikai, Cambridge MA \\ 
+		  2017 - & \textbf{Board Member}, Aikido Tekkojuku of Boston, Somerville MA \\ 
+		  2015 - & \textbf{Analytics Consultant}, Health Leads, Boston MA \\
+		  2014 & \textbf{Analytics Consultant}, Tech Networks of Boston Pro Bono Consulting \\
+		  2010-12   & \textbf{Cofounder and Director}, NinjaGram Charities, Swarthmore College, Swarthmore MA\\
+		  2011-12 & \textbf{Assistant Children's Instructor}, Aikido Kokikai of Swarthmore, Swarthmore PA\\
+		  2008-12 & \textbf{Cofounder and Director}, Swarthmore Martial Arts Club, Swarthmore PA 
+		\end{longtable}
+}
+\section*{Skills}
+
+	\textbf{Languages}: English (native), German (reading and listening), Norwegian Bokmal (reading)
+
+	\textbf{Software}: R, Python, Maple, \LaTeX, Linux, Jekyll, Matlab
+
+\hide{
+	\section*{Other Activities}
+
+	    \textbf{Aikido (Aikikai)}. Current rank: 1st Kyu. \\
+	    \textbf{Taekwondo (ITF)}. Current rank: 1st Dan. \\
+	    \textbf{Chess}. Current Elo: 1937. Virginia High School co-Champion, 2008.\\
+}
+% Add a software section in here eventually. 
+
+% Footer
+\bigskip
+\begin{center}
+  \begin{footnotesize}
+    Last updated: \today
+  \end{footnotesize}
+\end{center}
+
+\nobibliography{/Users/phil/Dropbox/library.bib}
+\end{document}
