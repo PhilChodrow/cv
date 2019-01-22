@@ -1,11 +1,7 @@
 compile_pdf:
   stage: build
   image: timnn/texlive  # use a Docker image for LaTeX from https://hub.docker.com/
-  script: 
-    pdflatex cv.tex  # build the pdf just as you would on your computer
-    bibtex cv.tex
-    pdflatex cv.tex
-    pdflatex cv.tex
+  script: pdflatex cv.tex && bibtex cv.tex && pdflatex cv.tex && pdflatex cv.tex
   artifacts:
     paths: 
       - cv.pdf  # instruct GitLab to keep the cv.pdf file
