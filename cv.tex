@@ -15,8 +15,8 @@
 %\bibliographystyle{apa}
 
 % Palatino font
-%\usepackage[T1]{fontenc}
-%\usepackage[sc,osf]{mathpazo}
+\usepackage[T1]{fontenc}
+\usepackage[sc,osf]{mathpazo}
 
 \def\name{Philip S. Chodrow}
 
@@ -91,7 +91,7 @@
   \href{www.mit.edu}{Massachusetts Institute of Technology} \\
   \iftoggle{Long}{
 	  \href{http://orc.mit.edu/}{Operations Research Center} \\
-	  \href{https://lids.mit.edu/}{Laboratory for Information and Decision Systems} \\ 
+	  % \href{https://lids.mit.edu/}{Laboratory for Information and Decision Systems} \\ 
   }{}
   77 Massachusetts Avenue \\
   Cambridge, MA 02139
@@ -101,17 +101,18 @@
     % Phone: & (212) 998-8578 \\
     Website: & \href{https://philchodrow.com}{philchodrow.com} \\
     Email: & \href{mailto:pchodrow@mit.edu}{pchodrow@mit.edu} \\
-    GitHub: & \href{https://github.com/PhilChodrow}{philchodrow}
+    GitHub: & \href{https://github.com/PhilChodrow}{PhilChodrow} \\
+    Twitter: & \href{https://twitter.com/PhilChodrow}{PhilChodrow} \\
     % Homepage: & \href{http://www.christinabergey.com/}{www.christinabergey.com} \\
   \end{tabular}
 \end{minipage}
 
 % \section*{Summary}
-\vspace{3em}
+% \vspace{3em}
 
-I am an applied mathematician developing models and methods for studying adaptive complex systems. 
-My methodological interests include stochastic processes, information theory, and spatial statistics. 
-My application areas include network inference; opinion dynamics; demographic segregation; and estimation problems in spatial growth processes. 
+% I am an applied mathematician developing models and methods for studying adaptive complex systems. 
+% My methodological interests include stochastic processes, information theory, and spatial statistics. 
+% My application areas include network inference; opinion dynamics; demographic segregation; and estimation problems in spatial growth processes. 
 
 
 \section*{Education}
@@ -120,10 +121,27 @@ My application areas include network inference; opinion dynamics; demographic se
 		2008-12 & {\bf B.A. with High Honors} in  Mathematics and Philosophy, Swarthmore College. 
 	\end{longtable}
 
-\section*{Recognitions and Honors}
+
+\section*{Selected Papers}
+	% \bibliographystyle{ieeetr} 
 	\setlength{\extrarowheight}{5pt}
 	\begin{longtable}{p{0.6in}|p{5.5in}}
-		2017-20 & {\bf NSF Graduate Research Fellowship} supporting research in modeling difference, disparity, and group dynamics in social systems.\\ 
+	  2019 & \bibentry{chodrow2019multigraphs} \\
+	  	   & \bibentry{Chodrow2019} \\ 
+	  	   & \bibentry{Schwarze2019} \\ 
+	  	   & \bibentry{Chodrow2018} \\ 
+	  2018 & \bibentry{Strano2018} \\ 
+	  2017 & \bibentry{Chodrow2017a} \\
+	  	   & \bibentry{Chodrow2017} \\ 
+\hide{
+	  2016 & \bibentry{chodrow2016demand}  \\ 
+	  2013 & \bibentry{chodrow2013upper}}
+	\end{longtable}
+
+\section*{Recognitions, Honors, and Grants}
+	\setlength{\extrarowheight}{5pt}
+	\begin{longtable}{p{0.6in}|p{5.5in}}
+		2017-20 & {\bf NSF Graduate Research Fellowship} supporting research into mathematical modeling of social and urban systems. \\ 
 		2018 & {\bf Goodwin Award Nominee} by MIT Operations Research Center for ``conspicuously effective teaching.'' \\ 
 		2012 & {\bf Fulbright Scholarship} supporting a year of research in Oslo, Norway. \\
 			 & {\bf Ivy Award} ``recognizing the man of the graduating class who is outstanding in leadership, scholarship, and contributions to the Swarthmore College community.''\\
@@ -133,49 +151,39 @@ My application areas include network inference; opinion dynamics; demographic se
 			2010 & {\bf Eugene Lang Summer Initiative Grant}, supporting a summer of undergraduate research. \\}
 	\end{longtable}
 
-\section*{Selected Papers}
-	% \bibliographystyle{ieeetr} 
-	\setlength{\extrarowheight}{5pt}
+
+\section*{Invited Talks}
 	\begin{longtable}{p{0.6in}|p{5.5in}}
-	  2019 & \bibentry{Chodrow2019} \\ 
-	  	   & \bibentry{Schwarze2019} \\ 
-	  2018 & \bibentry{Chodrow2018} \\ 
-	  	   & \bibentry{Strano2018} \\ 
-	  2017 & \bibentry{Chodrow2017a} \\
-	  	   & \bibentry{Chodrow2017} \\ 
-\hide{
-	  2016 & \bibentry{chodrow2016demand}  \\ 
-	  2013 & \bibentry{chodrow2013upper}}
+	2020 & Local Techniques in Adaptive Voter Models, AMS Eastern Sectional Meeting, Tufts, USA \\ 
+	2019 & Mathematical Foundations of Machine Learning, Conference on Complex Systems, Singapore \\ 
+	& Divergence, Entropy, Information: An Opinionated Introduction to Information Theory, Society of Young Network Scientists, Burlington, Vermont, USA \\ 
+	& Configuration Models of Random Hypergraphs, Northeastern University, Boston USA \\ 
+	2018 & What's the Fuss about Power Laws? ORC Student Seminar, MIT, Cambridge, USA. \\ 
+	2017 & The Structure of Spatial Segregation. Growth Lab Seminar, Harvard Kennedy School, Cambridge, USA. 
 	\end{longtable}
 
-\section*{Selected Talks}
+
+\section*{Selected Contributed Talks}
 	\begin{longtable}{p{0.6in}|p{5.5in}}
-	2019 & Configuration Models of Random Hypergraphs, Northeastern University, Boston USA (Invited); NetSci 2019, Burlington, VT; SIAM Workshop on Network Science, Snowbird, UT. \\ 
+	2019 & Configuration Models of Random Hypergraphs, NetSci 2019, Burlington, VT; SIAM Workshop on Network Science, Snowbird, UT. \\ 
 	2018 & Equilibrium Community Structure in Binary-State Adaptive Voter Models. SIAM Workshop on Network Science, Portland, Oregon; Conference on Complex Networks (CompleNet), Northeastern University, Boston \\ 
-		 & What's the Fuss about Power Laws? ORC Student Seminar, MIT, Cambridge, USA. \\ 
-	2017 
-	\hide{& The Structure of Spatial Segregation. Growth Lab Seminar, Harvard Kennedy School, Cambridge, USA. \\}
-		 & Information-Geometric Methods for Coarse-Graining Annotated Spatial Networks, NetSci 2017, Indianapolis, IN. \\ 
-	\hide{	     
+	2017 & Information-Geometric Methods for Coarse-Graining Annotated Spatial Networks, NetSci 2017, Indianapolis, IN. \\     
 	2016 & An Information Theoretic Lens on Urban Diversity. Conference on Complex Systems, Amsterdam, The Netherlands. \\
-		& Demand and Congestion in Multiplex Transportation Networks. Conference on Complex Systems, Amsterdam, The Netherlands. \\
-	2013 & Relativism, Cooperation, and the Practice of Inquiry. Conference on the Metaphysics of Culture, Helsinki, Finland.  \\
-		 & The Right Way to Care About the Truth. Filosofisk Supplement, the student philosophical society at the University of Oslo, Oslo, Norway. }
+	& Demand and Congestion in Multiplex Transportation Networks. Conference on Complex Systems, Amsterdam, The Netherlands. 
 	\end{longtable}
 
 \section*{Selected Teaching}
 	\begin{longtable}{p{0.6in}|p{5.5in}}
 	   
-	  2017-   & \textbf{Curriculum-Designer and Instructor}: Introduction to Statistical Programming for Business Analytics, MIT \\
-	          & \textbf{Organizer}: ``Computing in Optimization and Statistics'', MIT \\ 
+	  2017-   & \textbf{Curriculum-Designer and Lead Instructor}: Introduction to Statistical Programming for Business Analytics, MIT \\
+	          & \textbf{Organizer and Instructor}: ``Computing in Optimization and Statistics'', MIT \\ 
 	  		  & \textbf{Teaching Assistant}: 6.268: ``Network Science and Models,'' 6.431: ``Introduction to Probability,'' 1.208: ``Human Mobility and Networks'', MIT \\ 
 	  \hide{2016 & \textbf{Group Co-Leader}: Workshop in Predictive Policing, ICERM, Providence, RI.  \\}
 	  \hide{
-             & \textbf{Instructor}: ``Data Wrangling in R'' at MIT's January course ``Software Tools in Statistics and Optimization.'' \\
 	  	2012 & \textbf{Teaching Assistant} for an advanced undergraduate course in the philosophy of action with Professor Bjørn Ramberg at Universitet i Oslo. \\
 		2010-12 & \textbf{Mathematics Academic Support} at Swarthmore College, Swarthmore PA. \\
 		2009-12 & \textbf{Writing Mentor} at Swarthmore College, Swarthmore PA. Paper areas including philosophy, mathematics, English, sociology, and anthropology. Worked in-depth over a full year with two students writing senior theses. \\
-  		2012 & \textbf{Teaching Assistant} for intermediate-level course on the philosopy of Plato with Professor Grace Ledbetter at Swarthmore College, Swarthmore PA. 
+  		% 2012 & \textbf{Teaching Assistant} for intermediate-level course on the philosopy of Plato with Professor Grace Ledbetter at Swarthmore College, Swarthmore PA. 
 	  }
 	\end{longtable}
 
@@ -183,13 +191,13 @@ My application areas include network inference; opinion dynamics; demographic se
 \hide{
 	\section*{Service}
 		\begin{longtable}{p{0.6in}|p{5.5in}}
-		  2016- & \textbf{Reviewer}. \emph{PLoS ONE}; \emph{International Journal of Geographic Information Systems}; \emph{Computers, Environment, and Urban Systems}.\\
+		  2016- & \textbf{Reviewer}. \emph{Chaos}; \emph{International Journal of Geographic Information Systems}; \emph{Computers, Environment, and Urban Systems}; \emph{PLoS ONE}; \\\
 		  2016- & \textbf{Program Committee Member}. NetSci-X, Conference on Complex Systems, International Conference on Complex Systems. 
 		\end{longtable}
 	}
 
 \hide{
-	\section*{Research \& Professional Experience}
+	\section*{Other  Professional Experience}
 		\begin{longtable}{p{0.6in}|p{5.5in}}
 		  2018  & \textbf{Summer School} in Economic Networks, Oxford, UK \\ 
 		  2013-15 & \textbf{Analyst}, Health Leads, Boston MA \\
@@ -206,10 +214,10 @@ My application areas include network inference; opinion dynamics; demographic se
 	\section*{Community Service}
 		\begin{longtable}{p{0.6in}|p{5.5in}}
 		  2017 - & \textbf{Instructor}, Harvard Aikikai, Cambridge MA \\ 
-		  2017 - & \textbf{Board Member}, Aikido Tekkojuku of Boston, Somerville MA \\ 
-		  \hide{2015 - 2016& \textbf{Analytics Consultant}, Health Leads, Boston MA \\}
+		  & \textbf{Board Member}, Aikido Tekkojuku of Boston, Somerville MA \\ 
+		  \hide{2015-16 & \textbf{Analytics Consultant}, Health Leads, Boston MA \\}
 		  \hide{2014 & \textbf{Analytics Consultant}, Tech Networks of Boston Pro Bono Consulting \\}
-		  2010-12   & \textbf{Cofounder and Director}, NinjaGram Charities, Swarthmore College, Swarthmore MA\\
+		  2010-12   & \textbf{Cofounder and Director}, NinjaGram Charities, Swarthmore College, Swarthmore PA\\
 		  \hide{2011-12 & \textbf{Assistant Children's Instructor}, Aikido Kokikai of Swarthmore, Swarthmore PA\\}
 		  \hide{2008-12 & \textbf{Cofounder and Director}, Swarthmore Martial Arts Club, Swarthmore PA}
 		\end{longtable}
@@ -218,19 +226,11 @@ My application areas include network inference; opinion dynamics; demographic se
 
 	\textbf{Languages}: English (native), German (reading and listening), Norwegian Bokmal (reading)
 
-	\textbf{Software}: R, Python,  \LaTeX, Linux
+	\textbf{Software}: \texttt{R}, Python,  \LaTeX, Linux
 
 	\textbf{Activities}: Aikido: \emph{1st dan (Aikikai).} Chess: \emph{Virginia State High School Champion (2008)}
 
 
-\hide{
-	\section*{Other Activities}
-
-	    \textbf{Aikido (Aikikai)}. Current rank: 1st Dan. \\
-	    \textbf{Taekwondo (ITF)}. Current rank: 1st Dan. \\
-	    \textbf{Chess}. Current Elo: 1937. 
-}
-% Add a software section in here eventually. 
 
 % Footer
 \hide{\bigskip
