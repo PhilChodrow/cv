@@ -18,9 +18,13 @@
 
 % Palatino font
 % \usepackage[T1]{fontenc}
-% \usepackage[sc,osf]{mathpazo}
+\usepackage[sc,osf]{mathpazo}
 
-\usepackage[math]{iwona}
+% \usepackage[math]{iwona}
+\usepackage[T1]{fontenc}
+
+
+\usepackage[math]{kurier}
 \usepackage[T1]{fontenc}
 
 % \usepackage[nf]{coelacanth}
@@ -50,7 +54,7 @@
 % Custom section fonts
 \usepackage{sectsty}
 \sectionfont{\rmfamily\mdseries\Large}
-\subsectionfont{\rmfamily\mdseries\itshape\large}
+% \subsectionfont{\rmfamily\mdseries\itshape\large}
 
 % Other possible font commands include:
 % \ttfamily for teletype,
@@ -99,27 +103,35 @@
 % Print name centered and bold:
 \centerline{\Large \bf \name}
 
-\vspace{0.25in}
+% \vspace{0.25in}
 
-\begin{minipage}{0.50\linewidth}
-  Massachusetts Institute of Technology \\
-  \iftoggle{Long}{
-	  Operations Research Center \\
-	  % \href{https://lids.mit.edu/}{Laboratory for Information and Decision Systems} \\ 
-  }{}
-  77 Massachusetts Avenue \\
-  Cambridge, MA 02139
-\end{minipage}
-\begin{minipage}{0.50\linewidth}
-  \begin{tabular}{ll}
-    % Phone: & (212) 998-8578 \\
-    Website: & \href{https://philchodrow.com}{philchodrow.com} \\
-    Email: & \href{mailto:pchodrow@mit.edu}{pchodrow@mit.edu} \\
-    GitHub: & \href{https://github.com/PhilChodrow}{PhilChodrow} \\
-    Twitter: & \href{https://twitter.com/PhilChodrow}{PhilChodrow} \\
-    % Homepage: & \href{http://www.christinabergey.com/}{www.christinabergey.com} \\
-  \end{tabular}
-\end{minipage}
+% \begin{minipage}{0.50\linewidth}
+%   Massachusetts Institute of Technology \\
+%   \iftoggle{Long}{
+% 	  Operations Research Center \\
+% 	  % \href{https://lids.mit.edu/}{Laboratory for Information and Decision Systems} \\ 
+%   }{}
+%   77 Massachusetts Avenue \\
+%   Cambridge, MA 02139
+% \end{minipage}
+% \begin{minipage}{0.50\linewidth}
+%   \begin{tabular}{ll}
+%     % Phone: & (212) 998-8578 \\
+%     Website: & \href{https://philchodrow.com}{philchodrow.com} \\
+%     Email: & \href{mailto:pchodrow@mit.edu}{pchodrow@mit.edu} \\
+%     GitHub: & \href{https://github.com/PhilChodrow}{PhilChodrow} \\
+%     Twitter: & \href{https://twitter.com/PhilChodrow}{PhilChodrow} \\
+%     % Homepage: & \href{http://www.christinabergey.com/}{www.christinabergey.com} \\
+%   \end{tabular}
+% \end{minipage}
+
+\begin{center}
+Massachusetts Institute of Technology \\ 
+77 Massachusetts Avenue, Cambridge, MA 02139
+
+\url{pchodrow@mit.edu} $\diamond$  \href{https://www.philchodrow.com}{\texttt{www.philchodrow.com}} $\diamond$ he/him/his
+\end{center}
+
 
 % \section*{Summary}
 % \vspace{3em}
@@ -143,7 +155,7 @@
 	  	   & \bibentry{Chodrow2019} \\ 
 	  	   & \bibentry{Schwarze2019} \\ 
 	  	   & \bibentry{Chodrow2018} \\ 
-	  2018 & \bibentry{Strano2018} \\ 
+	  % 2018 & \bibentry{Strano2018} \\ 
 	  2017 & \bibentry{Chodrow2017a} \\
 	  	   & \bibentry{Chodrow2017} \\ 
 \hide{
@@ -170,7 +182,7 @@
 	2020 & \textbf{Local Techniques in Adaptive Voter Models.} AMS Eastern Sectional Meeting, Tufts University, Medford MA \\
 	2019 & \textbf{Features, Space, and Feature Space: Learning the Structure of Segregation.} Conference on Complex Systems, Singapore \\ 
 	& \textbf{Divergence, Entropy, Information: An Opinionated Introduction to Information Theory.} Society of Young Network Scientists, Burlington, VT \\ 
-	& \textbf{Configuration Models of Random Hypergraphs.} Northeastern University, Boston MA \\ 
+	& \textbf{Configuration Models of Random Hypergraphs.} Network Science Institute, Northeastern University, Boston MA \\ 
 	2018 & \textbf{What's the Fuss about Power Laws?} ORC Student Seminar, MIT, Cambridge, MA. \\ 
 	2017 & \textbf{The Structure of Spatial Segregation.} Growth Lab Seminar, Harvard Kennedy School, Cambridge, MA. 
 	\end{longtable}
@@ -185,7 +197,7 @@
 		&\quad Conference on Complex Systems, Singapore, 2019 \\
 		&\quad SIAM Workshop on Network Science, Portland, OR, 2018 \\
 		&\quad International Conference on Complex Systems, Cambridge, MA, 2018  \\
-		&\quad Conference on Complex Networks, Northeastern University, Boston, 2018 \\
+		&\quad Conference on Complex Networks, Northeastern University, Boston, MA 2018 \\
 	2016-20 & \textbf{Information-Geometry of Spatial Segregation} \\
 		&\quad Conference on Network Science, Indianapolis, IN, 2017 \\
 		&\quad Conference on Complex Systems, Amsterdam, The Netherlands, 2016 \\
@@ -198,12 +210,12 @@
 	   
 	  2017-   & \textbf{Curriculum-Designer and Instructor}: \\ 
 	          & \quad Computing in Optimization and Statistics (PhD level), MIT \\ 
-	  		  & \quad  Statistical Programming for Business Analytics (master's level), MIT  \\
+	  		  & \quad  Statistical Programming for Business Analytics (masters level), MIT  \\
 	  2018	& \textbf{Head Teaching Assistant} \\
-	  		&\quad 6.268, Network Science and Models (master's and PhD level), MIT \\ 
+	  		&\quad 6.268, Network Science and Models (masters and PhD level), MIT \\ 
 	  2017	& \textbf{Teaching Assistant} \\ 
-	  		&\quad 6.431, Introduction to Probability, MIT (undergraduate and master's level) \\ 
-	  		&\quad       1.208, Human Mobility and Networks, MIT (master's level) \\ 
+	  		&\quad 6.431, Introduction to Probability, MIT (undergraduate and masters level) \\ 
+	  		&\quad       1.208, Human Mobility and Networks, MIT (masters level) \\ 
 	  \hide{2016 & \textbf{Group Co-Leader}: Workshop in Predictive Policing, ICERM, Providence, RI.  \\}
 	  \hide{
 	  	2012 & \textbf{Teaching Assistant} "The Philosophy of Action", Universitet i Oslo, Norway \\
@@ -217,7 +229,7 @@
 
 	\subsection*{Educational}
 	\begin{longtable}{p{0.6in}|p{5.5in}}
-		  2019- & \textbf{Statistical Programming for Business Analytics} (master's level)  \\
+		  2019- & \textbf{Statistical Programming for Business Analytics} (masters level)  \\
 		  	   &\quad \url{https://philchodrow.github.io/mban_orientation/} \\ 
 		  2017-	   &  \textbf{Computing in Optimization and Statistics} (PhD level)\\ 
 		  	   & \quad 2017: \url{https://philchodrow.github.io/cos_2017/} \\ 
