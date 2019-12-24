@@ -16,16 +16,10 @@
 \nobibliography*
 %\bibliographystyle{apa}
 
-% Palatino font
-% \usepackage[T1]{fontenc}
-\usepackage[sc,osf]{mathpazo}
-
-% \usepackage[math]{iwona}
+\usepackage[sfdefault]{FiraSans} %% option 'sfdefault' activates Fira Sans as the default text font
 \usepackage[T1]{fontenc}
+\renewcommand*\oldstylenums[1]{{\firaoldstyle #1}}
 
-
-\usepackage[math]{kurier}
-\usepackage[T1]{fontenc}
 
 % \usepackage[nf]{coelacanth}
 % \usepackage[T1]{fontenc}
@@ -53,7 +47,7 @@
 
 % Custom section fonts
 \usepackage{sectsty}
-\sectionfont{\rmfamily\mdseries\Large}
+\sectionfont{\mdseries\Large}
 % \subsectionfont{\rmfamily\mdseries\itshape\large}
 
 % Other possible font commands include:
@@ -144,6 +138,7 @@ Massachusetts Institute of Technology \\
 
 
 \section*{All Publications and Preprints}
+  \vspace{-10pt}
 	% \bibliographystyle{ieeetr} 
 	\setlength{\extrarowheight}{5pt}
 	\begin{longtable}{p{0.6in}|p{5.5in}}
