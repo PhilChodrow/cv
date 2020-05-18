@@ -1,0 +1,354 @@
+%!TEX program = xelatex
+
+\documentclass[11pt,fullpage]{article}
+\usepackage[dvipsnames]{xcolor}
+
+\usepackage[colorlinks,allcolors=BrickRed]{hyperref}
+\usepackage{geometry}
+\usepackage{listliketab}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{etoolbox}
+\usepackage{natbib}
+\usepackage{bibentry}
+\usepackage{colortbl}
+
+\nobibliography*
+%\bibliographystyle{apa}
+
+% Palatino font
+% \usepackage[T1]{fontenc}
+% \usepackage[sc,osf]{mathpazo}
+
+% \usepackage[math]{iwona}
+% \usepackage[T1]{fontenc}
+
+
+% \usepackage[sfdefault]{FiraSans} %% option 'sfdefault' activates Fira Sans as the default text font
+% \usepackage[T1]{fontenc}
+% \renewcommand*\oldstylenums[1]{{\firaoldstyle #1}}
+
+% \usepackage[scaled]{helvet}
+% \renewcommand\familydefault{\sfdefault} 
+% \usepackage[T1]{fontenc}
+
+
+\usepackage{cmbright}
+\usepackage[T1]{fontenc}
+
+% \usepackage[math]{kurier}
+% \usepackage[T1]{fontenc}
+
+% \usepackage[nf]{coelacanth}
+% \usepackage[T1]{fontenc}
+% %% The font package uses mweights.sty which has som issues with the
+% %% \normalfont command. The following two lines fixes this issue.
+% \let\oldnormalfont\normalfont
+% \def\normalfont{\oldnormalfont\mdseries}
+
+\def\name{Philip S. Chodrow}
+
+\reversemarginpar
+
+\geometry{
+  body={6.5in, 8.5in},
+  left=1.0in,
+  top=1.0in
+}
+
+% Customize page headers
+\pagestyle{myheadings}
+\markright{\name}
+\thispagestyle{empty}
+
+% Custom section fonts
+\usepackage{sectsty}
+\sectionfont{\mdseries\Large}
+% \subsectionfont{\rmfamily\mdseries\itshape\large}
+
+% Other possible font commands include:
+% \ttfamily for teletype,
+% \sffamily for sans serif,
+% \bfseries for bold,
+% \scshape for small caps,
+% \normalsize, \large, \Large, \LARGE sizes.
+
+% Don't indent paragraphs.
+\setlength\parindent{0em}
+
+% Make lists without bullets
+\renewenvironment{itemize}{
+  \begin{list}{}{
+    \setlength{\leftmargin}{1.5em}
+  }
+}{
+  \end{list}
+}
+
+
+% \def\Long{0}
+% \def\Long{0}
+\newtoggle{Long}
+\toggletrue{Long}
+% \togglefalse{Long}
+
+\newcommand{\hide}[1]{
+   % \ifnum\Long=1
+ 
+   % #1 \vspace{\baselineskip}
+   % \fi
+ 
+   % \ifnum\Long=0
+   % % \vspace{2\baselineskip} \hspace{2cm}
+   % \fi
+   \iftoggle{Long}{
+   #1
+   }{}
+}
+
+
+\makeatletter
+\newcommand{\globalcolor}[1]{%
+  \color{#1}\global\let\default@color\current@color
+}
+\makeatother
+\AtBeginDocument{\globalcolor{gray!170}}
+
+
+\begin{document}
+\bibliographystyle{apalike}
+
+% Print name centered and bold:
+\centerline{\Large \bf \name}
+
+% \vspace{0.25in}
+
+% \begin{minipage}{0.50\linewidth}
+%   Massachusetts Institute of Technology \\
+%   \iftoggle{Long}{
+% 	  Operations Research Center \\
+% 	  % \href{https://lids.mit.edu/}{Laboratory for Information and Decision Systems} \\ 
+%   }{}
+%   77 Massachusetts Avenue \\
+%   Cambridge, MA 02139
+% \end{minipage}
+% \begin{minipage}{0.50\linewidth}
+%   \begin{tabular}{ll}
+%     % Phone: & (212) 998-8578 \\
+%     Website: & \href{https://philchodrow.com}{philchodrow.com} \\
+%     Email: & \href{mailto:pchodrow@mit.edu}{pchodrow@mit.edu} \\
+%     GitHub: & \href{https://github.com/PhilChodrow}{PhilChodrow} \\
+%     Twitter: & \href{https://twitter.com/PhilChodrow}{PhilChodrow} \\
+%     % Homepage: & \href{http://www.christinabergey.com/}{www.christinabergey.com} \\
+%   \end{tabular}
+% \end{minipage}
+
+\begin{center}
+Massachusetts Institute of Technology \\ 
+77 Massachusetts Avenue, Cambridge, MA 02139
+
+\url{pchodrow@mit.edu} $\diamond$  \href{https://www.philchodrow.com}{\texttt{www.philchodrow.com}} $\diamond$ he/him/his
+\end{center}
+
+
+% \section*{Summary}
+% \vspace{3em}
+
+% I am an applied mathematician developing models and methods for studying adaptive complex systems. 
+% My methodological interests include stochastic processes, information theory, and spatial statistics. 
+% My application areas include network inference; opinion dynamics; demographic segregation; and estimation problems in spatial growth processes. 
+
+\section*{Appointments}
+	\vspace{-10pt}
+	\setlength{\extrarowheight}{5pt}
+	\begin{longtable}{p{0.6in}|p{5.5in}}
+		2020- & {\bf Hedrick Visiting Assistant Professor} in the Department of Mathematics, UCLA. Beginning July, 2020. 
+		% 2008-12 & {\bf B.A. with High Honors} in  Mathematics and Philosophy, Swarthmore College. 
+	\end{longtable}
+
+\section*{Education}
+	\vspace{-10pt}
+	\setlength{\extrarowheight}{5pt}
+	\begin{longtable}{p{0.6in}|p{5.5in}}
+		2015- & {\bf Ph.D.} in Operations Research, MIT. Expected graduation May, 2020. \\
+		2008-12 & {\bf B.A. with High Honors} in  Mathematics and Philosophy, Swarthmore College. 
+	\end{longtable}
+
+\section*{Publications}
+  \vspace{-10pt}
+  % \bibliographystyle{ieeetr} 
+  \setlength{\extrarowheight}{5pt}
+  \begin{longtable}{p{0.6in}|p{5.5in}}
+    2020 & \bibentry{Chodrow2018} \\ 
+    	 & \bibentry{chodrow2019annotated} \\ 
+    2017 & \bibentry{Chodrow2017a} \\
+\hide{
+    2016 & \bibentry{chodrow2016demand}  \\ 
+    2013 & \bibentry{chodrow2013upper}}
+  \end{longtable}
+
+
+\section*{Preprints}
+  \vspace{-10pt}
+	% \bibliographystyle{ieeetr} 
+	\setlength{\extrarowheight}{5pt}
+	\begin{longtable}{p{0.6in}|p{5.5in}}
+	       & \bibentry{chodrow2019multigraphs} \\
+	  	   & \bibentry{Chodrow2019} \\ 
+	  	   & \bibentry{Schwarze2019} \\ 
+           & \bibentry{Strano2018} \\ 
+	  	   & \bibentry{Chodrow2017} 
+	\end{longtable}
+
+% \newpage
+\section*{Recognitions, Honors, and Grants}
+	\vspace{-10pt}
+	\setlength{\extrarowheight}{5pt}
+	\begin{longtable}{p{0.6in}|p{5.5in}}
+		2017-20 & {\bf NSF Graduate Research Fellowship} supporting research into mathematical modeling of social and urban systems. \\ 
+		2018 & {\bf Goodwin Award Nominee} by MIT Operations Research Center for ``conspicuously effective teaching.'' \\ 
+		2012 & {\bf Fulbright Scholarship} supporting a year of research in Oslo, Norway. \\
+			 & {\bf Ivy Award} ``recognizing the man of the graduating class who is outstanding in leadership, scholarship, and contributions to the Swarthmore College community.''\\
+			 & {\bf Phi Beta Kappa} inducted member. \\
+		\hide{
+			& {\bf Brinkmann Award} recognizing ``the best student paper on a mathematical subject.'' \\
+			2010 & {\bf Eugene Lang Summer Initiative Grant}, supporting undergraduate research. \\}
+	\end{longtable}
+
+
+\section*{Invited Talks}
+	\vspace{-10pt}
+	\begin{longtable}{p{0.6in}|p{5.5in}}
+	2020 & \textbf{Local Techniques in Adaptive Voter Models.} AMS Eastern Sectional Meeting, Tufts University, Medford MA \\
+	2019 & \textbf{Features, Space, and Feature Space: Learning the Structure of Segregation.} Conference on Complex Systems, Singapore \\ 
+	& \textbf{Divergence, Entropy, Information: An Opinionated Introduction to Information Theory.} Society of Young Network Scientists, Burlington, VT \\ 
+	& \textbf{Configuration Models of Random Hypergraphs.} Network Science Institute, Northeastern University, Boston MA \\ 
+	2018 & \textbf{What's the Fuss about Power Laws?} ORC Student Seminar, MIT, Cambridge, MA. \\ 
+	2017 & \textbf{The Structure of Spatial Segregation.} Growth Lab Seminar, Harvard Kennedy School, Cambridge, MA. 
+	\end{longtable}
+
+
+\section*{Selected Contributed Talks}
+	\vspace{-10pt}
+	\begin{longtable}{p{0.6in}|p{5.5in}}
+	2019 & \textbf{Moments of Uniformly Random Multigraphs with Fixed Degree Sequences} \\ 
+		&\quad Northeastern University, Boston, MA 2019 \\ 
+		& \textbf{Configuration Models of Random Hypergraphs and their Applications} \\
+		&\quad Conference on Network Science, Burlington, VT, 2019 \\ 
+		&\quad SIAM Workshop on Network Science, Snowbird, UT, 2019 \\ 
+	2018-19 & \textbf{Equilibrium Community Structure in Binary-State Adaptive Voter Models.} \\ 
+		&\quad Conference on Complex Systems, Singapore, 2019 \\
+		&\quad SIAM Workshop on Network Science, Portland, OR, 2018 \\
+		&\quad International Conference on Complex Systems, Cambridge, MA, 2018  \\
+		&\quad Conference on Complex Networks, Northeastern University, Boston, MA 2018 \\
+	2016-20 & \textbf{Information-Geometry of Spatial Segregation} \\
+		&\quad Conference on Network Science, Indianapolis, IN, 2017 \\
+		&\quad Conference on Complex Systems, Amsterdam, The Netherlands, 2016 \\
+	2016 & \textbf{Demand and Congestion in Multiplex Transportation Networks.} \\ 
+	&\quad Conference on Complex Systems, Amsterdam, The Netherlands, 2016
+	\end{longtable}
+
+\section*{Selected Teaching}
+	\vspace{-10pt}
+	\begin{longtable}{p{0.6in}|p{5.5in}}
+	   
+	  2017-   & \textbf{Curriculum-Designer and Instructor}: \\ 
+	          & \quad Computing in Optimization and Statistics (PhD level), MIT \\ 
+	  		  & \quad  Statistical Programming for Business Analytics (masters level), MIT  \\
+	  2018	& \textbf{Head Teaching Assistant} \\
+	  		&\quad 6.268, Network Science and Models (masters and PhD level), MIT \\ 
+	  2017	& \textbf{Teaching Assistant} \\ 
+	  		&\quad 6.431, Introduction to Probability, MIT (undergraduate and masters level) \\ 
+	  		&\quad       1.208, Human Mobility and Networks, MIT (masters level) \\ 
+	  \hide{2016 & \textbf{Group Co-Leader}: Workshop in Predictive Policing, ICERM, Providence, RI.  \\}
+	  \hide{
+	  	2012 & \textbf{Teaching Assistant} "The Philosophy of Action", Universitet i Oslo, Norway \\
+		2009-12 & \textbf{Mathematics Academic Support}, Swarthmore College, Swarthmore PA. \\
+			    & \textbf{Writing Associate and Thesis Mentor}, Swarthmore College, Swarthmore PA.\\
+  		% 2012 & \textbf{Teaching Assistant} for intermediate-level course on the philosopy of Plato with Professor Grace Ledbetter at Swarthmore College, Swarthmore PA. 
+	  }
+	\end{longtable}
+
+\section*{Software}
+	\vspace{-10pt}
+	\subsection*{Educational}
+	\vspace{-10pt}
+	\begin{longtable}{p{0.6in}|p{5.5in}}
+		  2019- & \textbf{Statistical Programming for Business Analytics} (masters level)  \\
+		  	   &\quad \url{https://philchodrow.github.io/mban_orientation/} \\ 
+		  2017-	   &  \textbf{Computing in Optimization and Statistics} (PhD level)\\ 
+		  	   & \quad 2017: \url{https://philchodrow.github.io/cos_2017/} \\ 
+		  	   & \quad 2018: \url{https://philchodrow.github.io/cos_2018/} 
+		\end{longtable}
+
+	\subsection*{Research}
+	\vspace{-10pt}
+	\begin{longtable}{p{0.6in}|p{5.5in}}
+		  2019 & \textbf{Configuration Models of Random Hypergraphs}  \\
+		  	   &\quad \url{https://github.com/PhilChodrow/hypergraph} \\ 
+		  	   & \textbf{Annotated Hypergraphs} \\ 
+		  	   &\quad \url{https://github.com/PhilChodrow/annotated_hypergraphs} \\ 
+		  	   &  \textbf{Moments of Uniformly Random Multigraphs} \\ 
+		  	   & \quad \url{https://github.com/PhilChodrow/multigraph_moments} \\ 
+		  2017 & \texttt{compx}: \textbf{Learning the Structure of Segregation} \\ 
+		  	   & \quad \url{https://github.com/PhilChodrow/compx} 
+		\end{longtable}
+
+
+\hide{
+	\section*{Academic Service}
+		\vspace{-10pt}
+		\begin{longtable}{p{0.6in}|p{5.5in}}
+		  2018 & \textbf{Organizer}: Seminar on Operations Research for Social Good, MIT\\ 
+		  2016- & \textbf{Reviewer}: \emph{Physical Review X}; \emph{Chaos}; \emph{Social Network Analysis and Mining}; \emph{Networks and Spatial Economics}; \emph{PLoS ONE}; \emph{International Journal of Geographic Information Systems}; \emph{Computers, Environment, and Urban Systems}  \\
+		  2016- & \textbf{Program Committee Member}: NetSci-X, Conference on Complex Systems, International Conference on Complex Systems 
+		\end{longtable}
+	}
+
+
+
+\hide{
+	\section*{Other  Experience}
+		\vspace{-10pt}
+		\begin{longtable}{p{0.6in}|p{5.5in}}
+		  2018  & \textbf{Summer School} in Economic Networks, Oxford, UK \\ 
+		  2013-15 & \textbf{Analyst}, Health Leads, Boston MA \\
+		  2012-14 & \textbf{Research Assistant}, Laboratory for Quantitative Medicine, Cambridge MA \\ 
+		  2012-13 & \textbf{Visiting Researcher}, Center for the Study of Mind in Nature, Oslo, Norway \\
+		  % 2011-12 & \textbf{Senior Honors Thesis} in philosophy, entitled \emph{Perception and Moral Goodness}, Swarthmore College. \\
+		  2010    & \textbf{REU Fellow} in matrix analysis, College of William and Mary, Williamsburg VA \\
+		  2009    & \textbf{Research Assistant} in theoretical plasma physics, James Madison University, Harrisonburg VA  
+		\end{longtable}
+}
+
+
+% \hide{
+	\section*{Community Service}
+		\vspace{-10pt}
+		\begin{longtable}{p{0.6in}|p{5.5in}}
+		  2017- & \textbf{Instructor}, Harvard Aikikai, Cambridge MA \\ 
+		  & \textbf{Board Member}, Aikido Tekkojuku of Boston, Somerville MA \\ 
+		  \hide{2015-16 & \textbf{Analytics Consultant}, Health Leads, Boston MA \\}
+		  2010-12   & \textbf{Cofounder and Director}, NinjaGram Charities, Swarthmore College, Swarthmore PA\\
+		  \hide{2011-12 & \textbf{Assistant Children's Instructor}, Aikido Kokikai of Swarthmore, Swarthmore PA\\}
+		  \hide{2008-12 & \textbf{Cofounder and Director}, Swarthmore Martial Arts Club, Swarthmore PA}
+		\end{longtable}
+% }
+\section*{Other}
+	
+	\textbf{Languages}: English (native), German (reading and listening), Norwegian Bokmal (reading)
+
+	\textbf{Software}: \texttt{R}, Python,  \LaTeX, Linux
+
+	\textbf{Activities}: Aikido: \emph{1st dan (Aikikai).} Chess: \emph{Virginia State High School Champion (2008)}
+
+% Footer
+\hide{\bigskip
+\begin{center}
+  \begin{footnotesize}
+    Last updated: \today
+  \end{footnotesize}
+\end{center}}
+
+\nobibliography{pubs}
+\end{document}
