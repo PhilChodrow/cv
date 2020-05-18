@@ -259,8 +259,12 @@ TSWLatexianTemp*
 *.sublime-workspace
 *.DS_Store
 
+# VS Code project files
+
+CV.code-workspace
+
 # output
-cv.pdf
-pub_list.pdf
+
+
 
 
