@@ -152,8 +152,12 @@
 \setbool{acvSectionColorHighlight}{true}
 
 % Awesome section color
-\def\@sectioncolor#1#2#3{%
-  \ifbool{acvSectionColorHighlight}{{\color{awesome}#1#2#3}}{#1#2#3}%
+% \def\@sectioncolor#1#2#3#4{%
+%   \ifbool{acvSectionColorHighlight}{{\color{awesome}#1#2#3#4}}{#1#2#3#4}%
+% }
+
+\def\sectioncolor#1{
+  \ifbool{acvSectionColorHighlight}{{\color{awesome}#1}}{#1}
 }
 
 
@@ -169,15 +173,15 @@
   ItalicFont=*-Italic,
   BoldFont=*-Bold,
   BoldItalicFont=*-BoldItalic,
-]{Roboto}
+]{Lato}
 
 \newfontfamily\headerfontlight[
   Path=\@fontdir,
   UprightFont=*-Thin,
   ItalicFont=*-ThinItalic,
-  BoldFont=*-Medium,
-  BoldItalicFont=*-MediumItalic,
-]{Roboto}
+  BoldFont=*-Regular,
+  BoldItalicFont=*-Italic,
+]{Lato}
 
 \newcommand*{\footerfont}{\sourcesanspro}
 \newcommand*{\bodyfont}{\sourcesanspro}
@@ -188,14 +192,14 @@
 %-------------------------------------------------------------------------------
 % Configure styles for each CV elements
 % For fundamental structures
-\newcommand*{\headerfirstnamestyle}[1]{{\fontsize{32pt}{1em}\headerfontlight\color{graytext} #1}}
-\newcommand*{\headerlastnamestyle}[1]{{\fontsize{32pt}{1em}\headerfont\bfseries\color{text} #1}}
+\newcommand*{\headerfirstnamestyle}[1]{{\fontsize{32pt}{1em}\headerfont\color{graytext} #1}}
+\newcommand*{\headerlastnamestyle}[1]{{\fontsize{32pt}{1em}\headerfont\color{text} #1}}
 \newcommand*{\headerpositionstyle}[1]{{\fontsize{7.6pt}{1em}\bodyfont\scshape\color{awesome} #1}}
 \newcommand*{\headeraddressstyle}[1]{{\fontsize{8pt}{1em}\headerfont\itshape\color{lighttext} #1}}
 \newcommand*{\headersocialstyle}[1]{{\fontsize{6.8pt}{1em}\headerfont\color{text} #1}}
 \newcommand*{\headerquotestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\itshape\color{darktext} #1}}
 \newcommand*{\footerstyle}[1]{{\fontsize{8pt}{1em}\footerfont\scshape\color{lighttext} #1}}
-\newcommand*{\sectionstyle}[1]{{\fontsize{16pt}{1em}\bodyfont\bfseries\color{text}\@sectioncolor #1}}
+\newcommand*{\sectionstyle}[1]{{\fontsize{16pt}{1em}\bodyfont\bfseries\color{text}\sectioncolor{#1}}}
 \newcommand*{\subsectionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\scshape\textcolor{text}{#1}}}
 \newcommand*{\paragraphstyle}{\fontsize{9pt}{1em}\bodyfontlight\upshape\color{text}}
 
@@ -323,6 +327,8 @@
 % Usage: \medium{<medium account>}
 \newcommand*{\medium}[1]{\def\@medium{#1}}
 
+\newcommand*{\pronouns}[1]{\def\@pronouns{#1}}
+
 % Defines writer's google scholar profile (optional)
 % Usage: \googlescholar{<googlescholar userid>}{<googlescholar username>}
 % e.g.https://scholar.google.co.uk/citations?user=wpZDx1cAAAAJ
@@ -378,6 +384,7 @@
   \ifthenelse{\equal{#1}{}}{}{\def\@letterenclname{#1}}
   \def\@letterenclosure{#2}
 }
+
 
 
 %-------------------------------------------------------------------------------
@@ -533,6 +540,12 @@
           \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
           \href{https://scholar.google.com/citations?user=\@googlescholarid}{\faGraduationCap\acvHeaderIconSep\@googlescholarname}%
         }%
+      \ifthenelse{\isundefined{\@pronouns}}%
+        {}%
+        {%
+          \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
+          \href{https://scholar.google.com/citations?user=\@googlescholarid}{\@pronouns}%
+        }%  
       \ifthenelse{\isundefined{\@extrainfo}}%
         {}%
         {%
@@ -605,6 +618,7 @@
       {\entrytitlestyle{#2} & \entrylocationstyle{#3} \\
       \entrypositionstyle{#1} & \entrydatestyle{#4} \\}
     \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}}
+    \ifempty{#5}{\vspace{-.7em}}{}
   \end{tabular*}%
 }
 
@@ -647,7 +661,7 @@
 % Define a line of cv information(honor, award or something else)
 % Usage: \cvhonor{<position>}{<title>}{<location>}{<date>}
 \newcommand*{\cvhonor}[4]{%
-  \honordatestyle{#4} & \honorpositionstyle{#1}, \honortitlestyle{#2} & \honorlocationstyle{#3} \\
+  \honordatestyle{#4} & \honorpositionstyle{#1}\ifempty{#1}{}{\ifempty{#2}{}{,} }\honortitlestyle{#2} & \honorlocationstyle{#3} \\
 }
 
 % Define an environment for cvskill
@@ -679,6 +693,26 @@
   \end{itemize}
   \end{justify}
   \vspace{-4.0mm}
+}
+
+\newenvironment{publications}{
+}
+
+% For publications: may need re-tooling
+\newcommand*{\pub}[1]{%
+  % \noindent
+  % \setlength\tabcolsep{0pt}
+  % \setlength{\extrarowheight}{0pt}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 0.0cm} R{0.0cm}}  
+    \descriptionstyle{#1} \\ 
+  \end{tabular*}
+  % \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 4.5cm} R{4.5cm}}
+  %   \ifempty{#2#3}
+  %     {\entrypositionstyle{#1} & \entrydatestyle{#4} \\}
+  %     {\entrytitlestyle{#2} & \entrylocationstyle{#3} \\
+  %     \entrypositionstyle{#1} & \entrydatestyle{#4} \\}
+  %   \multicolumn{2}{L{\textwidth}}{\descriptionstyle{#5}}
+  % \end{tabular*}%
 }
 
 

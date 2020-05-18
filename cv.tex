@@ -1,4 +1,4 @@
-%!TEX root = cv.tex
+
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
 
@@ -20,10 +20,19 @@
 % CONFIGURATIONS
 %-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
-\documentclass[11pt, a4paper]{awesome-cv}
+\documentclass[11pt, letterpaper]{awesome-cv}
+
+% for publications
+\usepackage{natbib}
+\usepackage{bibentry}
+
+% reverse numbering of publications
+\usepackage{etaremune}
+
+
 
 % Configure page margins with geometry
-\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\geometry{left=3cm, top=2cm, right=3cm, bottom=2cm, footskip=.5cm}
 
 % Specify the location of the included fonts
 \fontdir[fonts/]
@@ -31,9 +40,9 @@
 % Color for highlights
 % Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
 %                 awesome-nephritis, awesome-concrete, awesome-darknight
-\colorlet{awesome}{awesome-red}
+% \colorlet{awesome}{awesome-red}
 % Uncomment if you would like to specify your own color
-% \definecolor{awesome}{HTML}{CA63A8}
+\definecolor{awesome}{HTML}{E82B00}
 
 % Colors for text
 % Uncomment if you would like to specify your own color
@@ -57,7 +66,8 @@
 % \photo{./examples/profile.png}
 \name{Philip S.}{Chodrow}
 % \position{Software Architect{\enskip\cdotp\enskip}Security Expert}
-% \address{42-8, Bangbae-ro 15-gil, Seocho-gu, Seoul, 00681, Rep. of KOREA}
+\address{Massachusetts Institute of Technology \\ 
+77 Massachusetts Avenue, Cambridge, MA 02139}
 
 % \mobile{(+82) 10-9030-1843}
 \email{pchodrow@gmail.com}
@@ -74,12 +84,14 @@
 %% \firstname and \lastname will be used
 % \googlescholar{googlescholar-id}{}
 % \extrainfo{extra informations}
-
-\quote{``Be the change that you want to see in the world."}
+\pronouns{he/him/his}
+% \quote{``Be the change that you want to see in the world."}
 
 
 %-------------------------------------------------------------------------------
 \begin{document}
+\nobibliography*
+\bibliographystyle{apalike}
 
 % Print the header with above personal informations
 % Give optional argument to change alignment(C: center, L: left, R: right)
@@ -97,15 +109,18 @@
 %	CV/RESUME CONTENT
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
+\input{sections/positions.tex}
 \input{sections/education.tex}
-\input{sections/skills.tex}
+\input{sections/publications.tex}
+\pagebreak
+\input{sections/talks.tex}
+\input{sections/teaching.tex}
+\input{sections/software.tex}
+\input{sections/service.tex}
 \input{sections/experience.tex}
-\input{sections/extracurricular.tex}
-\input{sections/honors.tex}
-\input{sections/presentation.tex}
-\input{sections/writing.tex}
-\input{sections/committees.tex}
+\input{sections/community_service.tex}
+\input{sections/skills.tex}
 
-
+\nobibliography{pubs}
 %-------------------------------------------------------------------------------
 \end{document}
