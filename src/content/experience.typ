@@ -8,7 +8,7 @@
     organisation: [Middlebury College],
     // logo: "",
     date: [2022 -- present],
-    location: [Middlebury, VT, USA],
+    location: [Middlebury, VT],
     description: ""
     // tags: ("Go", "TypeScript", "React", "PostgreSQL")
 )
@@ -20,7 +20,7 @@
     organisation: [University of California, Los Angeles],
     // logo: "",
     date: [2020 -- 2022],
-    location: [Los Angeles, CA, USA],
+    location: [Los Angeles, CA],
     description: ""
     // tags: ("Go", "TypeScript", "React", "PostgreSQL")
 )

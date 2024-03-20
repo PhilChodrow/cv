@@ -34,7 +34,7 @@
     organisation: [Harvey Mudd College],
     logo: "",
     date: [2022],
-    location: [Claremont, CA, USA]
+    location: [Claremont, CA]
 )
 
 #cvEntry(

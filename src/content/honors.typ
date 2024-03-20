@@ -8,7 +8,7 @@
     organisation: [Department of Mathematics, UCLA],
     logo: "",
     date: [2022],
-    location: [Los Angeles, CA, USA],
+    location: [Los Angeles, CA],
     description: "\"Recognizing excellence in contribution to the instructional mission of the Department.\""
     // tags: ("Database Systems", "Computer Networks", "Cybersecurity")
 )
@@ -20,7 +20,7 @@
     organisation: [National Science Foundation],
     logo: "",
     date: [2017-2020],
-    location: [Cambridge, MA, USA],
+    location: [Cambridge, MA],
     // description: list(
     //     [#lorem(20)],
     // ),
@@ -42,7 +42,7 @@
     organisation: [Swarthmore College],
     logo: "",
     date: [2012],
-    location: [Swarthmore, PA, USA],
+    location: [Swarthmore, PA],
     description: "\"Recognizing the man of the graduating class who is outstanding in leadership, scholarship, and contributions to the Swarthmore College community.\""
 )
 
