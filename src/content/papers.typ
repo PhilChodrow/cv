@@ -32,9 +32,9 @@
 
 #cvSubSection("Other Writings")
 
-1. #pub(label: <chodrowPersonsChargedViolations2021>)
+2. #pub(label: <chodrowPersonsChargedViolations2021>)
 
-2. #pub(label: <siamnews2021>)
+1. #pub(label: <siamnews2021>)
 
 #show bibliography: none
 #bibliography("../pubs.bib")

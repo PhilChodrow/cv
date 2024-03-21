@@ -9,7 +9,7 @@
     logo: "",
     date: [2022],
     location: [Los Angeles, CA],
-    description: "\"Recognizing excellence in contribution to the instructional mission of the Department.\""
+    description: emph("\"Recognizing excellence in contribution to the instructional mission of the Department.\"")
     // tags: ("Database Systems", "Computer Networks", "Cybersecurity")
 )
 
@@ -43,7 +43,7 @@
     logo: "",
     date: [2012],
     location: [Swarthmore, PA],
-    description: "\"Recognizing the man of the graduating class who is outstanding in leadership, scholarship, and contributions to the Swarthmore College community.\""
+    description: emph("\"Recognizing the man of the graduating class who is outstanding in leadership, scholarship, and contributions to the Swarthmore College community.\"")
 )
 
 #cvSubSection("Travel and Conference Awards")

@@ -3,7 +3,7 @@
 
 #cvSection("Invited Talks")
 
-#box(height: 20em,
+#box(height: 22em,
 columns(2, gutter: 16pt)[
 
 
@@ -16,14 +16,7 @@ columns(2, gutter: 16pt)[
     [2024], [Tufts University Applied Mathematics Seminar],
   )
 
-  #miniheader("Edge-Correlated Growing Hypergraphs")
 
-  #table(
-    columns: 2,
-    stroke: none,
-    align: (right, left),
-    [2024], [Conference on Network Science (NetSci)],
-  )
 
   #miniheader("Connection, Computation, and Complex Systems in Undergraduate Education")
 
@@ -62,7 +55,7 @@ columns(2, gutter: 16pt)[
 ]
 )
 
-#box(height: 32em,
+#box(height: 34em,
 columns(2, gutter: 16pt)[
 
 
@@ -88,6 +81,8 @@ columns(2, gutter: 16pt)[
       columns: 2,
       stroke: none,
       align: (right, left),
+      [2023], [University of Edinburgh Informatics Seminar],
+      [2023], [University of Glasgow Computer Science Seminar], 
       [2022], [Middlebury College Computer Science Seminar], 
       [2022], [Colgate University Computer Science Seminar], 
       [2022], [Wesleyan University Computer Science Seminar], 
