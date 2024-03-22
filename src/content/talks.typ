@@ -3,7 +3,7 @@
 
 #cvSection("Invited Talks")
 
-#box(height: 22em,
+#box(height: 55em,
 columns(2, gutter: 16pt)[
 
 
@@ -52,11 +52,6 @@ columns(2, gutter: 16pt)[
       )
 
 
-]
-)
-
-#box(height: 34em,
-columns(2, gutter: 16pt)[
 
 
 
@@ -124,7 +119,7 @@ columns(2, gutter: 16pt)[
   fill: rgb("ffffff"),
   width: 100%,
 )
-
+#pagebreak()
 
 #cvSection("Other Professional Events")
 

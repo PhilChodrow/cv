@@ -14,6 +14,7 @@
 
 
 
+
 14. #pub(label: <kritschgauCommunityDetectionHypergraphs2024>)
 13. #pub(label: <brooksEmergencePolarizationSigmoidal2024>)
 
@@ -29,6 +30,15 @@
 3.  #pub(label: <chodrowStructureInformationSpatial2017>)
 2.  #pub(label: <chodrow2016demand>)
 1.  #pub(label: <chodrow2013upper>)
+
+#cvSubSection("Working Papers")
+
+
+4. #pub(label: <chodrowDynamicsFemaleGender>)
+3. #pub(label: <luoEfficientSamplingConfigurationModel>) #text("(*Undergraduate mentee)")
+
+2. #pub(label: <heEdgeCorrelatedGrowingHypergraphs>)
+1. #pub(label: <thompsonInferringInteractionKernels>)
 
 #cvSubSection("Other Writings")
 

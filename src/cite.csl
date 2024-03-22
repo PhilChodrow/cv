@@ -120,8 +120,10 @@
       <key variable="title"/>
     </sort>
     <layout suffix=".">
+      <group suffix=":">
       <text macro="author"/>
-      <text macro="year-date" prefix=" (" suffix=")."/>
+        <text macro="year-date" prefix=" (" suffix=")"/>
+      </group>
       <choose>
         <if type="bill book graphic legal_case legislation motion_picture report song" match="any">
           <group delimiter=" " prefix=" ">
