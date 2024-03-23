@@ -15,8 +15,8 @@
 
 
 
-14. #pub(label: <kritschgauCommunityDetectionHypergraphs2024>)
-13. #pub(label: <brooksEmergencePolarizationSigmoidal2024>)
+14. #pub(label: <brooksEmergencePolarizationSigmoidal2024>)
+13. #pub(label: <kritschgauCommunityDetectionHypergraphs2024>)
 
 12. #pub(label: <jonesDataScienceSocial2023>)
 11. #pub(label: <chodrowNonbacktrackingSpectralClustering2023>)
