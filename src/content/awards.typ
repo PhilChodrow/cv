@@ -1,7 +1,11 @@
 
 #import "../template.typ": *
 
-#cvSection("Recognitions and Grants")
+
+
+
+#cvSection("Honors and Awards")
+
 
 #cvEntry(
     title: [Liggett Instructor Distinguished Faculty Teaching Award],
@@ -11,30 +15,6 @@
     location: [Los Angeles, CA],
     description: emph("\"Recognizing excellence in contribution to the instructional mission of the Department.\"")
     // tags: ("Database Systems", "Computer Networks", "Cybersecurity")
-)
-
-// #divider()
-
-#cvEntry(
-    title: [NSF Graduate Research Fellowship (GRFP)],
-    organisation: [National Science Foundation],
-    logo: "",
-    date: [2017-2020],
-    location: [Cambridge, MA],
-    // description: list(
-    //     [#lorem(20)],
-    // ),
-)
-
-#cvEntry(
-    title: [Fulbright Scholarship],
-    organisation: [US-Norway Fulbright Foundation],
-    logo: "",
-    date: [2012-2013],
-    location: [Oslo, Norway],
-    // description: list(
-    //     [#lorem(20)],
-    // ),
 )
 
 #cvEntry(
