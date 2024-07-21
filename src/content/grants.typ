@@ -5,7 +5,7 @@
 
 #cvEntry(
     title: [RUI: Network Evolution with Unobserved Mechanisms (\$287,522)],
-    organisation: [National Science Foundation],
+    organisation: [National Science Foundation (NSF)],
     logo: "",
     date: [2024-2027],
     location: [Middlebury, VT],
@@ -15,8 +15,8 @@
 // #divider()
 
 #cvEntry(
-    title: [NSF Graduate Research Fellowship (\$138,000)],
-    organisation: [National Science Foundation],
+    title: [Graduate Research Fellowship (\$138,000)],
+    organisation: [National Science Foundation (NSF)],
     logo: "",
     date: [2017-2020],
     location: [Cambridge, MA],

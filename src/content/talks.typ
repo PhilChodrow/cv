@@ -63,6 +63,7 @@ columns(2, gutter: 16pt)[
     stroke: none,
     align: (right, left),
     [2024], [Toronto Metropolitan University Network Science Seminar],
+    [2023], [University of Vermont Joint Lab Seminar],
     [2022], [Oxford University Networks Seminar],
     [2022], [Swarthmore College Mathematics Seminar],
     [2021], [Canadian Mathematical Society Winter Meeting],
