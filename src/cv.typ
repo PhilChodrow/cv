@@ -14,6 +14,7 @@
 #autoImport("teaching")
 #autoImport("pd")
 #autoImport("service")
+#autoImport("college-service")
 
 // #grid(
 //     columns: (60%, 40%),
