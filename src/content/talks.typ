@@ -27,6 +27,14 @@ columns(2, gutter: 16pt)[
     [2024], [Conference on Network Science (NetSci)],
   )
 
+  #miniheader("Edge-Correlated Growing Hypergraphs")
+
+  #table(
+    columns: 2,
+    stroke: none,
+    align: (right, left),
+    [2024], [BRAINS Seminar: Bridging AI, Networks and Hypergraphs],
+  )
   
 
   #miniheader("Challenges and Opportunities in Hypergraph Network Data Science")

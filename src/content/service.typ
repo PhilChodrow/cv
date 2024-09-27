@@ -29,12 +29,31 @@
 
 #cvSubSection("Events Co-Organized")
 
+
+#cvEntry(
+    title: [Minisymposium on Tensor Methods in Network Science],
+    organisation: [SIAM Conference on Mathematics of Data Science],
+    logo: "",
+    date: [2022],
+    location: [San Diego, CA]
+)
+
+
+
 #cvEntry(
     title: [Southern California Applied Mathematics Symposium (SoCAMS)],
     organisation: [Harvey Mudd College],
     logo: "",
     date: [2022],
     location: [Claremont, CA]
+)
+
+#cvEntry(
+    title: [MAA Project NExT Workshop on Projects Across the Mathematics Curriculum],
+    organisation: [Joint Math Meetings],
+    logo: "",
+    date: [2022],
+    location: [Online]
 )
 
 #cvEntry(
