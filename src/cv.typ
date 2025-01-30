@@ -12,6 +12,7 @@
 #autoImport("awards")
 // #pagebreak()
 #autoImport("teaching")
+#autoImport("research-students")
 #autoImport("pd")
 #autoImport("service")
 #autoImport("college-service")
