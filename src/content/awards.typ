@@ -4,7 +4,18 @@
 
 
 
-#cvSection("Honors and Awards")
+#cvSection("Recognition")
+
+
+#cvEntry(
+    title: [Finalist Nominee, Inclusive Design for Learning Award],
+    organisation: [Middlebury CTLR and Advisory Group on Disability, Access, and Inclusion],
+    logo: "",
+    date: [2025],
+    location: [Middlebury, VT],
+    description: emph("\"...highlights an instructor’s embrace of Inclusive Design and the role of Inclusive Design in high quality instruction.\"")
+    // tags: ("Database Systems", "Computer Networks", "Cybersecurity")
+)
 
 
 #cvEntry(

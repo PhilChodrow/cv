@@ -34,10 +34,11 @@
 #cvSubSection("Working Papers")
 
 
-4. #pub(label: <chodrowDynamicsFemaleGender>)
-3. #pub(label: <luoEfficientSamplingConfigurationModel>) #text("(*Undergraduate mentee)")
-
-2. #pub(label: <heEdgeCorrelatedGrowingHypergraphs>)
+6. #pub(label: <chodrowDynamicsFemaleGender>)
+5. #pub(label: <luoEfficientSamplingConfigurationModel>) #text("(*Undergraduate mentee)")
+4. #pub(label: <chodrowEquivalenceInformationsCharacterizes2025a>)
+3. #pub(label: <aguiarIllusionHouseholdsEntities2025>)
+2. #pub(label: <heHypergraphLinkPrediction2025>)
 1. #pub(label: <thompsonInferringInteractionKernels>)
 
 #cvSubSection("Other Writings")

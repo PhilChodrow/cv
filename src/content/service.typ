@@ -2,7 +2,7 @@
 
 #cvSection("Professional Service")
 
-#cvSubSection("Journal Reviews")
+#cvSubSection("Scholarly Reviews")
 
 #table(
   columns: 3,
@@ -20,6 +20,7 @@
   [_Physical Review E_],
   [_IEEE Trans. Network Sci. and Eng._],
   [_Nature Human Behavior_],
+  [_EPJ Data Science_],
   [_Social Network Analysis and Mining_],
   [_Networks and Spatial Economics_],
   [_Chaos_],
@@ -27,8 +28,41 @@
   [_PLoS One_]
 )
 
+#cvSubSection("Grant Review Panels")
+
+#cvEntry(
+    title: [Applied and Computational Mathematics],
+    organisation: [NSF Division of Mathematical Sciences (DMS)],
+    logo: "",
+    date: [2025],
+    location: [Online]
+)
+
+#cvEntry(
+    title: [Applied and Computational Mathematics],
+    organisation: [NSF Division of Mathematical Sciences (DMS)],
+    logo: "",
+    date: [2022],
+    location: [Online]
+)
+
 #cvSubSection("Events Co-Organized")
 
+#cvEntry(
+    title: [Minisymposium on Mathematics of Network Science],
+    organisation: [SIAM Annual Meeting],
+    logo: "",
+    date: [2025],
+    location: [Montreal, QC]
+)
+
+#cvEntry(
+    title: [Minisymposium on Data, Inference, and Dynamics in Complex Systems],
+    organisation: [SIAM Conference on Applied Dynamical Systems],
+    logo: "",
+    date: [2025],
+    location: [Denver, CO]
+)
 
 #cvEntry(
     title: [Minisymposium on Tensor Methods in Network Science],

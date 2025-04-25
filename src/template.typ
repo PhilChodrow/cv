@@ -21,8 +21,7 @@
 
 /* Styling */
 #let headerFont = ("Avenir", "Symbols Nerd Font")
-#let textFont = ("Palatino
-", "Symbols Nerd Font")
+#let textFont = ("Symbols Nerd Font")
 
 #let textColors = (
     lightGray: rgb("#ededef"),

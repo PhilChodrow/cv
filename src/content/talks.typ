@@ -3,7 +3,7 @@
 
 #cvSection("Invited Talks")
 
-#box(height: 55em,
+#box(height: 45em,
 columns(2, gutter: 16pt)[
 
 
@@ -13,6 +13,7 @@ columns(2, gutter: 16pt)[
     columns: 2,
     stroke: none,
     align: (right, left),
+    [2025], [SIAM Conference on Applied Dynamical Systems],
     [2024], [Tufts University Applied Mathematics Seminar],
   )
 
@@ -96,6 +97,14 @@ columns(2, gutter: 16pt)[
     )
 
 
+
+ ]
+)
+
+
+#box(height: 9em,
+columns(2, gutter: 16pt)[
+
   #miniheader("Random Graphs for Data Science")
 
     #table(
@@ -117,18 +126,13 @@ columns(2, gutter: 16pt)[
     [2023], [Middlebury TEDx],
     [2023], [Middlebury Faculty At Home]
   )
-
- ]
-)
-
-
+])
 
 #set rect(
   inset: 8pt,
   fill: rgb("ffffff"),
   width: 100%,
 )
-#pagebreak()
 
 #cvSection("Other Professional Events")
 
