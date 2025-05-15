@@ -2,7 +2,19 @@
 
 #cvSection("Thesis and Research Students")
 
-#cvSubSection("Thesis Advisees")
+#cvSubSection("PhD Committees")
+
+#pad(left: 0.5cm,
+table(
+  columns: 3,
+  stroke: none,
+  align: (right, left, left),
+  [2025], [William Thompson], [UVM],
+)
+)
+
+
+#cvSubSection("Middlebury Thesis Advisees")
 
 #pad(left: 0.5cm,
 table(
@@ -15,7 +27,7 @@ table(
 )
 )
 
-#cvSubSection("Thesis Committees")
+#cvSubSection("Middlebury Thesis Committees")
 
 #pad(left: 0.5cm,
 table(
@@ -31,7 +43,7 @@ table(
 )
 )
 
-#cvSubSection("Other Research Students")
+#cvSubSection("Other Middlebury Research Students")
 
 #pad(left: 0.5cm,
 table(

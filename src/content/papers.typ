@@ -2,22 +2,17 @@
 
 #cvSection("Papers")
 
+
+#cvSubSection("In Review")
+
+2. #pub(label: <aguiarIllusionHouseholdsEntities2025>)
+1. #pub(label: <heHypergraphLinkPrediction2025>)
+
 #cvSubSection("Peer Reviewed")
-
-// #cvPublication(
-//   bibPath: "pubs.bib",
-//   keyList: (
-//     "chodrow2020",
-//     "jones2023"),
-//   refStyle: "apa"  cv
-// )
-
-
 
 
 14. #pub(label: <brooksEmergencePolarizationSigmoidal2024>)
 13. #pub(label: <kritschgauCommunityDetectionHypergraphs2024>)
-
 12. #pub(label: <jonesDataScienceSocial2023>)
 11. #pub(label: <chodrowNonbacktrackingSpectralClustering2023>)
 10. #pub(label: <demetilloSpaceBasedObservational2021>)
@@ -34,17 +29,14 @@
 #cvSubSection("Working Papers")
 
 
-6. #pub(label: <chodrowDynamicsFemaleGender>)
-5. #pub(label: <luoEfficientSamplingConfigurationModel>) #text("(*Undergraduate mentee)")
-4. #pub(label: <chodrowEquivalenceInformationsCharacterizes2025a>)
-3. #pub(label: <aguiarIllusionHouseholdsEntities2025>)
-2. #pub(label: <heHypergraphLinkPrediction2025>)
+3. #pub(label: <chodrowDynamicsFemaleGender>)
+2. #pub(label: <luoEfficientSamplingConfigurationModel>) #text("(*Undergraduate mentee)")
 1. #pub(label: <thompsonInferringInteractionKernels>)
 
 #cvSubSection("Other Writings")
 
+3. #pub(label: <chodrowEquivalenceInformationsCharacterizes2025a>)
 2. #pub(label: <chodrowPersonsChargedViolations2021>)
-
 1. #pub(label: <siamnews2021>)
 
 #show bibliography: none

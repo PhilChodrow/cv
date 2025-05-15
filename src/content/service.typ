@@ -14,15 +14,15 @@
   [_Nature Communications_],
   [_Science Advances_],
   [_Proc. Nat. Acad. Sci. (PNAS)_],
-  [_J. Applied and Computational Topology_],
+  [_J. Appl. & Comp. Topology_],
   [_Physical Review Letters_],
   [_Physical Review X_],
   [_Physical Review E_],
-  [_IEEE Trans. Network Sci. and Eng._],
+  [_IEEE Trans. Network Sci. & Eng._],
   [_Nature Human Behavior_],
   [_EPJ Data Science_],
-  [_Social Network Analysis and Mining_],
-  [_Networks and Spatial Economics_],
+  [_Social Network Analysis & Mining_],
+  [_Networks & Spatial Economics_],
   [_Chaos_],
   [_Int’l J. Geo. Info. Sys._],
   [_PLoS One_]
@@ -57,7 +57,7 @@
 )
 
 #cvEntry(
-    title: [Minisymposium on Data, Inference, and Dynamics in Complex Systems],
+    title: [Minisymposium on Data, Inference, and Dynamics in Complex Social Systems],
     organisation: [SIAM Conference on Applied Dynamical Systems],
     logo: "",
     date: [2025],
@@ -98,6 +98,16 @@
     location: [Vancouver, CA]
 )
 
+#cvSubSection("Other Professional Service")
+
+#cvEntry(
+    title: [Poster Session Judge],
+    organisation: [SIAM Conference on Applied Dynamical Systems],
+    logo: "",
+    date: [2025],
+    location: [Denver, CO]
+)
+
 #cvSubSection("Professional Societies")
 
 #table(
@@ -108,3 +118,4 @@
   [Association for Women in Mathematics (AWM)],
   [National Association of Mathematicians (NAM)]
 )
+

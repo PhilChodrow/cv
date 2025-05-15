@@ -14,9 +14,9 @@ columns(2, gutter: 16pt)[
     stroke: none,
     align: (right, left),
     [2025], [SIAM Conference on Applied Dynamical Systems],
+    [2025], [Michigan State University CMSE Seminar],
     [2024], [Tufts University Applied Mathematics Seminar],
   )
-
 
 
   #miniheader("Connection, Computation, and Complex Systems in Undergraduate Education")
@@ -34,6 +34,7 @@ columns(2, gutter: 16pt)[
     columns: 2,
     stroke: none,
     align: (right, left),
+    [2025], [CIRRELT Network Science Workshop],
     [2024], [BRAINS Seminar: Bridging AI, Networks and Hypergraphs],
   )
   
@@ -47,7 +48,6 @@ columns(2, gutter: 16pt)[
     [2023], [Vermont-KIAS Workshop on Group Interactions in Network Science],
     [2023], [Joint Math Meetings: Special Session on Hypergraph Data Science]
   )
-
 
 
   #miniheader("Feedback Loops from Ranking in Networks")
@@ -65,7 +65,7 @@ columns(2, gutter: 16pt)[
 
 
 
-  #miniheader("Eigenvector Methods for Clustering Nonuniform Hypergraphs")
+#miniheader("Generative Hypergraph Clustering: Scalable Hueristics and Sparse Thresholds")
 
   #table(
     columns: 2,
@@ -73,27 +73,19 @@ columns(2, gutter: 16pt)[
     align: (right, left),
     [2024], [Toronto Metropolitan University Network Science Seminar],
     [2023], [University of Vermont Joint Lab Seminar],
+    [2023], [University of Edinburgh Informatics Seminar],
+    [2023], [University of Glasgow Computer Science Seminar], 
     [2022], [Oxford University Networks Seminar],
     [2022], [Swarthmore College Mathematics Seminar],
+    [2022], [Middlebury College Computer Science Seminar], 
+    [2022], [Colgate University Computer Science Seminar], 
+    [2022], [Wesleyan University Computer Science Seminar], 
     [2021], [Canadian Mathematical Society Winter Meeting],
-    [2021], [UCLA Undergraduate Mathematics Student Association],
     [2021], [Claremont Center for the Mathematical Sciences],
-  )
-
-  #miniheader("Generative Hypergraph Clustering: Scalable Hueristics and Sparse Thresholds")
-
-    #table(
-      columns: 2,
-      stroke: none,
-      align: (right, left),
-      [2023], [University of Edinburgh Informatics Seminar],
-      [2023], [University of Glasgow Computer Science Seminar], 
-      [2022], [Middlebury College Computer Science Seminar], 
-      [2022], [Colgate University Computer Science Seminar], 
-      [2022], [Wesleyan University Computer Science Seminar], 
-      [2021], [Grinnell College Computer Science Seminar], 
-      [2021], [Conference on Network Science (NetSci): Satellite on Higher-Order Models in Network Science],
-      [2021], [Association for the Advancement of Artificial Intelligence (AAAI): Workshop on Graphs and Complex Structures for Learning and Reasoning]
+    [2021], [UCLA Undergraduate Mathematics Student Association],
+    [2021], [Grinnell College Computer Science Seminar], 
+    [2021], [Conference on Network Science (NetSci): Satellite on Higher-Order Models in Network Science],
+    [2021], [Association for the Advancement of Artificial Intelligence (AAAI): Workshop on Graphs and Complex Structures for Learning and Reasoning]
     )
 
 
