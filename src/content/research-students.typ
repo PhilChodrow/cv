@@ -50,6 +50,7 @@ table(
   columns: 3,
   stroke: none,
   align: (right, left),
-  [2024], [Justin Corke], [_Degree Assortativity of Union Hypergraphs_]
+  [2025], [Francis Cataldo], [_Community Detection in Growing Hypergraphs_],
+  [2024], [Justin Corke], [_Degree Assortativity of Union Hypergraphs_],
 )
 )

@@ -152,6 +152,7 @@ columns(2, gutter: 16pt)[
       columns: 2,
       stroke: none,
       align: (right, left),
+      [2025], [Collective Social Phenomena: Dynamics and Data \ _Casa Matemática Oaxaca (CMO)_],
       [2023], [Data Science and Social Justice: Networks, Policy, and Education \ _ICERM_],
       [2023], [AMS Mathemematics Research Community: Mathematics of Complex Social Systems],
       [2022], [Data Science and Social Justice: Networks, Policy, and Education \ _ICERM_],

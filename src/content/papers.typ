@@ -6,7 +6,7 @@
 #cvSubSection("In Review")
 
 2. #pub(label: <aguiarIllusionHouseholdsEntities2025>)
-1. #pub(label: <heHypergraphLinkPrediction2025>)
+1. #pub(label: <heHypergraphLinkPrediction2025>) (two equal first authors)
 
 #cvSubSection("Peer Reviewed")
 
@@ -35,9 +35,10 @@
 
 #cvSubSection("Other Writings")
 
-3. #pub(label: <chodrowEquivalenceInformationsCharacterizes2025a>)
-2. #pub(label: <chodrowPersonsChargedViolations2021>)
-1. #pub(label: <siamnews2021>)
+4. #pub(label: <chodrowEquivalenceInformationsCharacterizes2025a>)
+3. #pub(label: <chodrowPersonsChargedViolations2021>)
+2. #pub(label: <siamnews2021>)
+1. #pub(label: <Chodrow2017>)
 
 #show bibliography: none
 #bibliography("../pubs.bib")
