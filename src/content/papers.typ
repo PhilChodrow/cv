@@ -11,6 +11,7 @@
 #cvSubSection("Peer Reviewed")
 
 
+15. #pub(label: <chodrowActiveLearningReducing2025>)
 14. #pub(label: <brooksEmergencePolarizationSigmoidal2024>)
 13. #pub(label: <kritschgauCommunityDetectionHypergraphs2024>)
 12. #pub(label: <jonesDataScienceSocial2023>)

@@ -9,7 +9,7 @@ table(
   columns: 3,
   stroke: none,
   align: (right, left, left),
-  [2025], [William Thompson], [UVM],
+  [2025], [William Thompson], [Complex Systems, University of Vermont],
 )
 )
 
@@ -27,6 +27,18 @@ table(
 )
 )
 
+#cvSubSection("Other Middlebury Research Students")
+
+#pad(left: 0.5cm,
+table(
+  columns: 3,
+  stroke: none,
+  align: (right, left, left),
+  [2025], [Francis Cataldo], [_Community Detection in Growing Hypergraphs_],
+  [2024], [Justin Corke], [_Degree Assortativity of Union Hypergraphs_],
+)
+)
+
 #cvSubSection("Middlebury Thesis Committees")
 
 #pad(left: 0.5cm,
@@ -40,17 +52,5 @@ table(
   [2024], [Toby Pouler], [ (_Computer Science_)], 
   [], [Otis Milliken], [ (_Computer Science_)], 
   [2023], [Ben Rahill],  [ (_Computer Science_)] 
-)
-)
-
-#cvSubSection("Other Middlebury Research Students")
-
-#pad(left: 0.5cm,
-table(
-  columns: 3,
-  stroke: none,
-  align: (right, left),
-  [2025], [Francis Cataldo], [_Community Detection in Growing Hypergraphs_],
-  [2024], [Justin Corke], [_Degree Assortativity of Union Hypergraphs_],
 )
 )

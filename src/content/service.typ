@@ -18,6 +18,7 @@
   [_Physical Review Letters_],
   [_Physical Review X_],
   [_Physical Review E_],
+  [_Discrete Mathematics_],
   [_IEEE Trans. Network Sci. & Eng._],
   [_Nature Human Behavior_],
   [_EPJ Data Science_],
