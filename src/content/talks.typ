@@ -3,7 +3,7 @@
 
 #cvSection("Invited Talks")
 
-#box(height: 45em,
+#box(height: 28em,
 columns(2, gutter: 16pt)[
 
 
@@ -49,7 +49,6 @@ columns(2, gutter: 16pt)[
     [2023], [Joint Math Meetings: Special Session on Hypergraph Data Science]
   )
 
-
   #miniheader("Feedback Loops from Ranking in Networks")
       #table(
         columns: 2,
@@ -60,10 +59,25 @@ columns(2, gutter: 16pt)[
         [2021], [UCLA Undergraduate Mathematics Student Association], 
       )
 
+  #miniheader("Random Graphs for Data Science")
+
+    #table(
+      columns: 2,
+      stroke: none,
+      align: (right, left),
+      [2020], [UCLA Network Science Seminar], 
+      [2020], [MIT ORC Student Seminar], 
+      [2019], [Northeastern  University Network Science Seminar], 
+    )
 
 
 
+ ]
+)
 
+
+#box(height: 30em,
+columns(2, gutter: 16pt)[
 
 #miniheader("Generative Hypergraph Clustering: Scalable Hueristics and Sparse Thresholds")
 
@@ -88,26 +102,7 @@ columns(2, gutter: 16pt)[
     [2021], [Association for the Advancement of Artificial Intelligence (AAAI): Workshop on Graphs and Complex Structures for Learning and Reasoning]
     )
 
-
-
- ]
-)
-
-
-#box(height: 9em,
-columns(2, gutter: 16pt)[
-
-  #miniheader("Random Graphs for Data Science")
-
-    #table(
-      columns: 2,
-      stroke: none,
-      align: (right, left),
-      [2020], [UCLA Network Science Seminar], 
-      [2020], [MIT ORC Student Seminar], 
-      [2019], [Northeastern  University Network Science Seminar], 
-    )
-
+  
   #miniheader("Public Talks: Data Science and AI")
 
   #table(
@@ -128,11 +123,24 @@ columns(2, gutter: 16pt)[
 
 #cvSection("Other Professional Events")
 
-#grid(
-  columns: (50%, 50%),
-  rows: (auto),
-  gutter: 3pt,
-  rect[
+#box(height: 24em,
+columns(2, gutter: 16pt)[
+
+    #miniheader("Workshops")  
+
+    #table(
+      columns: 2,
+      stroke: none,
+      align: (right, left),
+      [2025], [Complex Networks Winter Workshop \ _Quebec City, CA_],
+      [2025], [Collective Social Phenomena: Dynamics and Data \ _Casa Matemática Oaxaca (CMO)_],
+      [2023], [Data Science and Social Justice: Networks, Policy, and Education \ _ICERM_],
+      [2023], [AMS Mathemematics Research Community: Mathematics of Complex Social Systems],
+      [2022], [Data Science and Social Justice: Networks, Policy, and Education \ _ICERM_],
+      [2022], [AMS Mathemematics Research Community: Models and Methods for Sparse (Hyper)Network Science],
+      [2019], [Complex Networks Winter Workshop \ _Quebec City, CA_]
+    )
+  
     #miniheader("Invited Panels")
 
     #table(
@@ -144,19 +152,4 @@ columns(2, gutter: 16pt)[
       [2021], [Early-Career Research Panel \ _Northeastern Regional Conference on Complex Systems_],
       [2021], [Perspectives on Graphs and Complex Structures for Learning and Reasoning \ _AAAI_]
     )
-  ],
-  rect[
-    #miniheader("Workshop Participation")  
-
-    #table(
-      columns: 2,
-      stroke: none,
-      align: (right, left),
-      [2025], [Collective Social Phenomena: Dynamics and Data \ _Casa Matemática Oaxaca (CMO)_],
-      [2023], [Data Science and Social Justice: Networks, Policy, and Education \ _ICERM_],
-      [2023], [AMS Mathemematics Research Community: Mathematics of Complex Social Systems],
-      [2022], [Data Science and Social Justice: Networks, Policy, and Education \ _ICERM_],
-      [2022], [AMS Mathemematics Research Community: Models and Methods for Sparse (Hyper)Network Science]
-    )
-  ]
-)
+])

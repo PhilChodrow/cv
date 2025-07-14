@@ -113,7 +113,7 @@
       </group>
     </layout>
   </citation>
-  <bibliography hanging-indent="true" et-al-min="12" et-al-use-first="12">
+  <bibliography hanging-indent="false" et-al-min="12" et-al-use-first="12">
     <sort>
       <key macro="author"/>
       <key macro="year-date"/>
