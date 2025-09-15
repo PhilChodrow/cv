@@ -3,7 +3,7 @@
 
 #cvSection("Invited Talks")
 
-#box(height: 28em,
+#box(height: 58em,
 columns(2, gutter: 16pt)[
 
 
@@ -13,6 +13,7 @@ columns(2, gutter: 16pt)[
     columns: 2,
     stroke: none,
     align: (right, left),
+    [2025], [CMO BIRS: Collective Social Phenomena],
     [2025], [SIAM Conference on Applied Dynamical Systems],
     [2025], [Michigan State University CMSE Seminar],
     [2024], [Tufts University Applied Mathematics Seminar],
@@ -72,12 +73,6 @@ columns(2, gutter: 16pt)[
 
 
 
- ]
-)
-
-
-#box(height: 30em,
-columns(2, gutter: 16pt)[
 
 #miniheader("Generative Hypergraph Clustering: Scalable Hueristics and Sparse Thresholds")
 

@@ -15,6 +15,7 @@
   [_Science Advances_],
   [_Proc. Nat. Acad. Sci. (PNAS)_],
   [_J. Appl. & Comp. Topology_],
+  [_J. Machine Learning Research_],
   [_Physical Review Letters_],
   [_Physical Review X_],
   [_Physical Review E_],

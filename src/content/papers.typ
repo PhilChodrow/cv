@@ -2,15 +2,13 @@
 
 #cvSection("Papers")
 
-#cvSubSection("In Review")
 
 #set par(hanging-indent: 1em)
 
-2. #pub(label: <chodrowEquivalenceInformationsCharacterizes2025a>)
+17. #pub(label: <chodrowEquivalenceInformationsCharacterizes2025b>)
 
-1. #pub(label: <heHypergraphLinkPrediction2025>) (two equal first authors)
+16. #pub(label: <heEdgeCorrelationsLink2025>) (two equal first authors)
 
-#cvSubSection("Peer Reviewed")
 
 
 15. #pub(label: <chodrowActiveLearningReducing2025>)
@@ -54,6 +52,8 @@
 // 1. #pub(label: <thompsonInferringInteractionKernels>)
 
 #cvSubSection("Other Writings")
+
+4. #pub(label: <aldanaModelingSocialSystems2025>)
 
 3. #pub(label: <chodrowPersonsChargedViolations2021>)
 
