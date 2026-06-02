@@ -9,7 +9,7 @@ table(
   columns: 3,
   stroke: none,
   align: (right, left, left),
-  [2025], [William Thompson], [Complex Systems, University of Vermont],
+  [2027], [William Thompson], [Complex Systems, University of Vermont],
 )
 )
 
@@ -21,6 +21,7 @@ table(
   columns: 3,
   stroke: none,
   align: (right, left, left),
+  [2025], [Francis Cataldo], [_Community Detection in Growing Hypergraphs_],
   [2025], [Violet Ross], [_Growing Hypergraphs with Node Attributes_],
   [2024], [Bell Luo], [_Efficient Sampling from Hypergraph Configuration Models_],
   [], [Jamie Hackney], [_Opinion Dynamics and Electoral Systems_],
@@ -34,7 +35,6 @@ table(
   columns: 3,
   stroke: none,
   align: (right, left, left),
-  [2025], [Francis Cataldo], [_Community Detection in Growing Hypergraphs_],
   [2024], [Justin Corke], [_Degree Assortativity of Union Hypergraphs_],
 )
 )
@@ -46,6 +46,7 @@ table(
   columns: 3,
   stroke: none,
   align: (right, left, left),
+  [2026], [Azan Umman], [(_Physics and Astronomy_)],
   [2025], [Alex Takoudes], [(_Earth and Climate Science_)],
   [], [Liam Patty], [(_Computer Science_)], 
   [], [Alexis Ballo], [(_Computer Science_)], 

@@ -51,6 +51,14 @@
 #cvSubSection("Events Co-Organized")
 
 #cvEntry(
+    title: [A Blue Start: Higher Order Hackathon at NetSci],
+    organisation: [Conference on Network Science (NetSci)],
+    logo: "",
+    date: [2026],
+    location: [Boston, MA]
+)
+
+#cvEntry(
     title: [Minisymposium on Mathematics of Network Science],
     organisation: [SIAM Annual Meeting],
     logo: "",

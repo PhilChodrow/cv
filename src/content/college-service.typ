@@ -5,10 +5,18 @@
 #cvSubSection("Committee Membership")
 
 #cvEntry(
+    title: [Technology Advisory Committee],
+    organisation: [Middlebury College],
+    logo: "",
+    date: [2025-],
+    location: [Middlebury, VT]
+)
+
+#cvEntry(
     title: [Ad Hoc Committee on Curricular Requirements],
     organisation: [Middlebury College],
     logo: "",
-    date: [2024-],
+    date: [2024-2025],
     location: [Middlebury, VT]
 )
 

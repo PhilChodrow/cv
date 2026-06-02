@@ -441,6 +441,14 @@
   str
 )}
 
+#let talks(..content) = {
+    table(
+        columns: 2,
+        stroke: none,
+        align: (right, left),
+        ..content
+        )}
+
 
 #let pub(
     label: none
