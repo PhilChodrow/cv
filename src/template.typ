@@ -455,7 +455,9 @@
 ) = {
     // show "Chodrow, P. S. ,": strong("PSC and" ) 
     show "Philip S. Chodrow": strong("PSC")
-    show "Yifei Luo": "Yifei Luo*"
+    show "Yifei Luo": "Yifei Luo°"
+    show "Violet Ross": "Violet Ross°"
+    show "Francis Cataldo": "Francis Cataldo°"
     cite(label, form: "full", style: "cite.csl")
 }
 

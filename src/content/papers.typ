@@ -5,6 +5,8 @@
 
 #set par(hanging-indent: 1em)
 
+18. #pub(label: <rossGrowingHypergraphsHomophily2026>) (°Undergraduate mentees)
+
 17. #pub(label: <chodrowEquivalenceInformationsCharacterizes2025b>)
 
 16. #pub(label: <heEdgeCorrelationsLink2025>) (two equal first authors)

@@ -3,7 +3,7 @@
 
 #cvSection("Invited Talks")
 
-#box(height: 58em,
+#box(height: 52em,
 columns(2, gutter: 16pt)[
 
 
@@ -55,13 +55,6 @@ columns(2, gutter: 16pt)[
         [2021], [UCLA Undergraduate Mathematics Student Association], 
       )
 
-  #miniheader("Random Graphs for Data Science")
-
-    #talks(
-      [2020], [UCLA Network Science Seminar], 
-      [2020], [MIT ORC Student Seminar], 
-      [2019], [Northeastern  University Network Science Seminar], 
-    )
 
 
 
@@ -89,7 +82,7 @@ columns(2, gutter: 16pt)[
   
 ])
 
-#box(height: 6em,
+#box(height: 8em,
 columns(2, gutter: 16pt)[
   #miniheader("Public Talks: Data Science and AI")
 
@@ -98,6 +91,15 @@ columns(2, gutter: 16pt)[
     [2023], [Middlebury TEDx],
     [2023], [Middlebury Faculty At Home]
   )
+
+
+  #miniheader("Random Graphs for Data Science")
+
+    #talks(
+      [2020], [UCLA Network Science Seminar], 
+      [2020], [MIT ORC Student Seminar], 
+      [2019], [Northeastern  University Network Science Seminar], 
+    )
 ])
 
 #set rect(
