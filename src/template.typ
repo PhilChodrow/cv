@@ -127,6 +127,7 @@
     str
 ))}
 
+<<<<<<< HEAD
 #let entryHTTPStyle(str) = {text(
     size: 9pt,
     // weight: "medium",
@@ -136,6 +137,8 @@
     str
 )}
 
+=======
+>>>>>>> 3c49907813fb772794587be91e825dc2c7b9698d
 #let skillTypeStyle(str) = {text(
     size: 12pt,
     weight: "bold",
@@ -349,6 +352,7 @@
     tagListStyle(tags)
 }
 
+<<<<<<< HEAD
 
 #let onlineLectureNotes(
     title: "Title",
@@ -398,6 +402,8 @@
     tagListStyle(tags)
 }
 
+=======
+>>>>>>> 3c49907813fb772794587be91e825dc2c7b9698d
 #let cvSkill(
     type: "Type",
     tags: (),
