@@ -3,9 +3,16 @@
 
 #cvSection("Invited Talks")
 
-#box(height: 52em,
+#box(height: 51em,
 columns(2, gutter: 16pt)[
 
+
+  #miniheader("Learning Social Influence With Unobserved Mechanisms")
+
+  #talks(
+    [2026], [The Santa Fe Institute],
+    [2026], [Bi-College Consortium Mathematics Seminar],
+  )
 
   #miniheader("Dynamics of Gender Representation in Professional Mathematics")
 
@@ -18,17 +25,11 @@ columns(2, gutter: 16pt)[
     [2024], [Tufts University Applied Mathematics Seminar],
   )
 
-  #miniheader("Teaching Network Science with Interactive Lecture Notes")
+  #miniheader("Teaching Network Science")
 
   #talks(
-    [2026], [NetSci Ed at NetSci],
-  )
-
-
-  #miniheader("Connection, Computation, and Complex Systems in Undergraduate Education")
-
-  #talks(
-    [2024], [Conference on Network Science (NetSci)],
+    [2026], [NetSci Ed Satellite at NetSci],
+    [2024], [NetSci Ed Satellite at NetSci],
   )
 
   #miniheader("Edge-Correlated Growing Hypergraphs")
@@ -39,14 +40,6 @@ columns(2, gutter: 16pt)[
     [2024], [BRAINS Seminar: Bridging AI, Networks and Hypergraphs],
   )
   
-
-  #miniheader("Challenges and Opportunities in Hypergraph Network Data Science")
-
-  #talks(
-    [2023], [Vermont-KIAS Workshop on Group Interactions in Network Science],
-    [2023], [Joint Math Meetings: Special Session on Hypergraph Data Science]
-  )
-
   #miniheader("Feedback Loops from Ranking in Networks")
       #talks(
         [2025], [Complex Networks Winter Workshop],
@@ -79,11 +72,22 @@ columns(2, gutter: 16pt)[
     [2021], [Workshop on Graphs and Complex Structures for Learning and Reasoning at (AAAI)]
     )
 
+
+
+  
   
 ])
 
-#box(height: 8em,
+#box(height: 14em,
 columns(2, gutter: 16pt)[
+
+  #miniheader("Challenges and Opportunities in Hypergraph Network Data Science")
+
+  #talks(
+    [2023], [Vermont-KIAS Workshop on Group Interactions in Network Science],
+    [2023], [Joint Math Meetings: Special Session on Hypergraph Data Science]
+  )
+
   #miniheader("Public Talks: Data Science and AI")
 
   #talks(

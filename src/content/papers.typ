@@ -5,6 +5,8 @@
 
 #set par(hanging-indent: 1em)
 
+20. #pub(label: <thompsonLearningSocialInfluence2026>)
+
 19. #pub(label: <chodrowMeasuringDiversitySegregation2026>)
 
 18. #pub(label: <rossGrowingHypergraphsHomophily2026>) (°Undergraduate mentees)
